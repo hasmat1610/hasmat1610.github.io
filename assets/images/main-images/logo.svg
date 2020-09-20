@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="26px" viewBox="0 0 53 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>HP</title>
+    <defs>
+        <linearGradient x1="0%" y1="38.1354151%" x2="100%" y2="61.8645849%" id="linearGradient-1">
+            <stop stop-color="#6B73FF" offset="0%"></stop>
+            <stop stop-color="#000DFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M166.648,63 L166.648,53.172 L176.368,53.172 L176.368,63 L183.496,63 L183.496,37.8 L176.368,37.8 L176.368,47.268 L166.648,47.268 L166.648,37.8 L159.52,37.8 L159.52,63 L166.648,63 Z M195.664,63 L195.664,56.412 L200.056,56.412 C202.336,56.412 204.316,56.034 205.996,55.278 C207.676,54.522 208.972,53.448 209.884,52.056 C210.796,50.664 211.252,49.02 211.252,47.124 C211.252,45.228 210.796,43.578 209.884,42.174 C208.972,40.77 207.676,39.69 205.996,38.934 C204.316,38.178 202.336,37.8 200.056,37.8 L200.056,37.8 L188.536,37.8 L188.536,63 L195.664,63 Z M199.624,50.796 L195.664,50.796 L195.664,43.416 L199.624,43.416 C201.088,43.416 202.192,43.74 202.936,44.388 C203.68,45.036 204.052,45.948 204.052,47.124 C204.052,48.3 203.68,49.206 202.936,49.842 C202.192,50.478 201.088,50.796 199.624,50.796 L199.624,50.796 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI" transform="translate(-159.000000, -37.000000)" fill-rule="nonzero">
+            <g id="HP">
+                <use fill="#FFFFFF" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <use fill="#FFFFFF" xlink:href="#path-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>
