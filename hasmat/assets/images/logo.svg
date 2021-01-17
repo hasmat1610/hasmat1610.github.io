@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="43px" viewBox="0 0 46 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>logo</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-120.000000, -100.000000)" fill="#FFFFFF">
+            <g id="logo" transform="translate(120.000000, 100.000000)">
+                <path d="M8.16,32 L8.16,23.72 L14.49,23.72 L14.49,32 L21.15,32 L21.15,10.76 L14.49,10.76 L14.49,18.41 L8.16,18.41 L8.16,10.76 L1.5,10.76 L1.5,32 L8.16,32 Z M30.81,32 L30.81,25.25 L33.45,25.25 C35.17,25.25 36.635,24.93 37.845,24.29 C39.055,23.65 39.97,22.785 40.59,21.695 C41.21,20.605 41.52,19.39 41.52,18.05 C41.52,15.83 40.825,14.06 39.435,12.74 C38.045,11.42 36.05,10.76 33.45,10.76 L33.45,10.76 L24.15,10.76 L24.15,32 L30.81,32 Z M32.7,20 L30.81,20 L30.81,16.1 L32.7,16.1 C34.08,16.1 34.77,16.75 34.77,18.05 C34.77,19.35 34.08,20 32.7,20 L32.7,20 Z" id="HP" fill-rule="nonzero"></path>
+                <rect id="Rectangle" x="40" y="27" width="6" height="6" rx="3"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
