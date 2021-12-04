@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   background-color: transparent;
-  width: 340px;
+  width: 140px;
   height: 100vh;
   min-height: 100vh;
   z-index: 9999;
@@ -32,6 +32,10 @@
         width: 100%;
         height: 56px;
         object-fit: contain;
+      }
+
+      .logo-mini {
+        display: none;
       }
     }
   }
@@ -93,6 +97,7 @@
               min-height: 60px;
               min-width: 50px;
               border-radius: 32px 0 0 32px;
+              white-space: nowrap;
               transition: all 0.8s;
 
               .icon-span {

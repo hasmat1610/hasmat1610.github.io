@@ -27,6 +27,7 @@
   --error-state-colour-10: #ffeeee;
   --font-family-primary: "Poppins", sans-serif;
   --padding-70: 70px;
+  --padding-75: 75px;
   --bs-gutter-x: 15px;
 }
 
@@ -98,12 +99,52 @@ body {
   position: relative !important;
 }
 
+.mt-10 {
+  margin-top: 10px !important;
+}
+
 .navbar-toggler:focus {
   box-shadow: none;
 }
 
 a {
   text-decoration: none;
+}
+
+.btn.btn-primary-common {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  padding: 9px 30px 6px;
+  border-radius: 12px;
+  min-height: 50px;
+  background: #ff3131;
+  transition: all 0.8s;
+  text-transform: uppercase;
+
+  &:hover {
+    background: #312c45;
+  }
+}
+
+.btn.btn-danger-common {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  padding: 9px 30px 6px;
+  border-radius: 12px;
+  min-height: 50px;
+  background: #dc3545;
+  transition: all 0.8s;
+  text-transform: uppercase;
+
+  &:hover {
+    background: #312c45;
+  }
 }
 
 /* Typography */
@@ -140,33 +181,28 @@ p {
   display: inline-block;
 }
 
+.btn-mw150 {
+  min-width: 150px;
+}
 /* End of Button */
 
 .form-root {
-  padding: 0 0;
+  padding: 0;
   margin: 0;
   position: relative;
 
-  .form-group-custom {
+  .form-group {
     margin-bottom: 20px;
     position: relative;
 
-    .label-div {
-      display: flex;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      min-height: 48px;
-      padding: 9px 0 8px 0;
-    }
-
     label {
-      font-weight: 600;
-      font-size: 20px;
+      font-weight: 400;
+      font-size: 16px;
       line-height: 1.5;
-      margin: 0;
+      margin: 0 0 6px;
       text-align: left;
       letter-spacing: 0;
-      color: #000;
+      color: #181b1a;
     }
 
     .input-control {
@@ -174,12 +210,12 @@ p {
     }
 
     .form-control {
-      font-size: 18px;
-      color: #000;
-      min-height: 48px;
-      padding: 8px 20px 8px 20px;
-      border: 1px solid #eaeaea;
-      border-radius: 10px;
+      font-size: 16px;
+      color: #181b1a;
+      min-height: 50px;
+      padding: 8px 20px;
+      border: 1px solid #b3b6b666;
+      border-radius: 12px;
       line-height: 24px;
       margin: 0 0 5px 0;
       font-weight: 500;
@@ -254,6 +290,11 @@ p {
     }
   }
 
+  .btn-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+
   .error-message-box {
     p {
       font-weight: 600;
@@ -307,8 +348,161 @@ p {
     ~ .custom-control-label::before {
     background-color: #4d7cfe;
   }
-
   /* End of checkbox */
+
+  .form-check {
+    position: relative;
+    margin: 0 0 10px;
+    padding-left: 0;
+
+    .form-check-input[type="checkbox"] {
+      display: none;
+    }
+
+    .form-check-label {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: left;
+      letter-spacing: 0;
+      color: #181b1a;
+      cursor: pointer;
+      margin: 0;
+      padding: 0 0 0 30px;
+
+      &::before {
+        content: "";
+        height: 20px;
+        width: 20px;
+        border-radius: 4px;
+        display: inline-block;
+        border: 1px solid #b3b6b666;
+        position: absolute;
+        left: 0;
+        top: 1px;
+      }
+
+      &::after {
+        content: "";
+      }
+    }
+
+    .form-check-input[type="checkbox"]:checked + .form-check-label::after {
+      content: "\e876";
+      font-family: "Material Icons Outlined";
+      font-weight: normal;
+      font-style: normal;
+      font-size: 18px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: "liga";
+      -webkit-font-smoothing: antialiased;
+      position: absolute;
+      left: 0;
+      top: 1px;
+      height: 20px;
+      width: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      background: #ff3131;
+      border-radius: 4px;
+    }
+  }
+
+  .img-circle-div {
+    position: relative;
+    padding: 0 0 30px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+
+    .text-center p {
+      font-size: 18px;
+      line-height: 21px;
+      color: #000000;
+      margin: 15px 0 0 0;
+    }
+
+    .text-center {
+      width: 100%;
+    }
+
+    .title-div {
+      padding: 0 0 0 20px;
+
+      label.filelabel-text {
+        margin: 0;
+        cursor: pointer;
+
+        h5 {
+          font-size: 18px;
+          color: #181b1a;
+          font-weight: 600;
+          line-height: 1.5;
+          display: block;
+          margin: 0 0 8px 0;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 1.5;
+          font-weight: 400;
+          color: #181b1ab3;
+        }
+      }
+    }
+
+    .circle {
+      width: 128px;
+      height: 128px;
+      position: relative;
+      border-radius: 100%;
+      display: block;
+      background: #fcf6f0;
+
+      .profile-pic {
+        object-fit: cover;
+        display: block;
+        border: 1px solid #b3b6b666;
+        border-radius: 50%;
+        background-color: rgb(247, 246, 244);
+        width: 128px;
+        height: 128px;
+      }
+
+      label.filelabel-icon {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        bottom: 4px;
+        right: 6px;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        background-color: #ff3131;
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        margin: 0;
+      }
+
+      label.filelabel-icon .icon-mt {
+        display: flex;
+        font-size: 21px;
+        padding-left: 2px;
+      }
+    }
+  }
 }
 
 /*  End of general css */
@@ -341,6 +535,8 @@ p {
 
   .nav-dashboard-left {
     flex: 1;
+    padding-left: 60px;
+    position: relative;
   }
 
   .nav-dashboard-right {
@@ -415,6 +611,10 @@ p {
   padding: 0;
   margin: 0;
   position: relative;
+
+  .main-div {
+    padding: 0 var(--padding-75) 0;
+  }
 }
 
 //table custom part
@@ -531,7 +731,38 @@ p {
   }
 }
 
+.hg-menu-group {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  margin-top: 5px;
+  left: 0;
+  z-index: 99;
+  transition: all 0.5s;
+
+  .hg-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border: none;
+    color: #181b1a;
+    background: #f6f6f5;
+    outline: none;
+    box-shadow: none;
+    border-radius: 12px;
+    transition: all 0.8s;
+
+    &:hover {
+      color: #fff;
+      background: #181b1a;
+    }
+  }
+}
+
 @import "./dasboard";
+@import "./courses";
 
 @media (min-width: 1025px) {
   /* main right content area */
@@ -590,11 +821,45 @@ p {
         }
       }
     }
+
+    &.active-hg-left-root {
+      .nav-logo-section .dash-logo {
+        .logo-main {
+          display: none;
+        }
+
+        .logo-mini {
+          display: block;
+        }
+      }
+    }
   }
 
   .middle-area-dashboard {
     &.active {
-      padding-left: 305px;
+      padding-left: 140px;
+
+      .nav-dashboard-row .nav-dashboard-left {
+        padding-left: 0;
+        position: initial;
+      }
+
+      .hg-menu-group {
+        left: 20px;
+
+        .hg-menu-btn {
+          color: #fff;
+          background: #ff3131;
+
+          .material-icons {
+            transform: rotate(180deg);
+          }
+        }
+      }
+
+      .container-full {
+        max-width: 1330px;
+      }
     }
   }
 }
@@ -619,13 +884,19 @@ p {
   :root {
     --padding-70: 50px;
   }
+}
 
-  .middle-area-dashboard {
-    padding: 0 35px 0 185px;
+@media (max-width: 1024px) {
+  .nav-dashboard-row .nav-dashboard-left {
+    padding-left: 0;
   }
 
-  .middle-area-dashboard.active {
-    padding-left: 285px;
+  .hg-menu-group {
+    display: none;
+  }
+
+  :root {
+    --padding-75: 0;
   }
 }
 

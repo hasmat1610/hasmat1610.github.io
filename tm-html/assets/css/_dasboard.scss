@@ -1,5 +1,5 @@
 .header.header-dashboard {
-  padding: 50px 45px 40px;
+  padding: 50px var(--padding-75) 40px;
   position: relative;
   width: 100%;
   display: block;
@@ -12,6 +12,7 @@
 .search-div {
   position: relative;
   width: 100%;
+  flex: 1;
   display: block;
 
   .search-form-group {
@@ -506,6 +507,90 @@ ul.nav-right-list-ul {
   }
 }
 
+.account-settings-root-div {
+  border-top: 1px solid #b3b6b666;
+  padding: 30px 0 0;
+  margin: 10px 0 0 0;
+  position: relative;
+}
+
+.general-settings-card-02 {
+  padding: 30px 30px 10px;
+  margin: 0 0 30px;
+  border-radius: 16px;
+  position: relative;
+  border: 1px solid #dfdfe3;
+  box-shadow: 0px 4px 48px #0000000d;
+}
+
+.delete-account-dv {
+  border-top: 1px solid #dfdfe3;
+  padding: 25px 0 20px;
+  position: relative;
+}
+
+@media (min-width: 1451px) and (max-width: 1650px) {
+  .my-card-bx .my-card-bx-main-bv .btn-cst {
+    font-size: 12px;
+    padding: 9px 10px 6px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1450px) {
+  .my-card-bx .my-card-bx-main-bv .btn-cst {
+    font-size: 12px;
+    padding: 9px 10px 6px;
+  }
+
+  .my-card-bx .my-card-bx-main-bv .btn-cst .txt-blk {
+    display: block;
+  }
+
+  .my-card-bx .my-card-bx-main-bv .img-div {
+    width: 100px;
+  }
+
+  .my-card-bx .my-card-bx-main-bv .content-div {
+    padding: 0 0 0 15px;
+  }
+
+  .my-card-bx .my-card-bx-main-bv p {
+    font-size: 14px;
+  }
+
+  .general-settings-card-02 {
+    padding: 20px 15px 5px;
+  }
+
+  .form-root .img-circle-div .circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .form-root .img-circle-div .circle .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+
+  .form-root .img-circle-div .title-div {
+    padding: 0 0 0 12px;
+  }
+
+  .form-root .img-circle-div .title-div label.filelabel-text h5 {
+    font-size: 16px;
+    margin: 0 0 4px 0;
+  }
+
+  .form-root .img-circle-div .circle label.filelabel-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .form-root .img-circle-div .circle label.filelabel-icon .icon-mt {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 767px) {
   .header.header-dashboard {
     padding: 20px 0 20px;
@@ -583,6 +668,62 @@ ul.nav-right-list-ul {
     border-radius: 16px;
   }
   /* End of Card */
+
+  /* account-settings */
+  .general-settings-card-02 {
+    padding: 20px 15px 10px;
+  }
+
+  .form-root .form-check .form-check-label {
+    font-size: 14px;
+  }
+
+  .form-root .img-circle-div .circle {
+    width: 90px;
+    height: 90px;
+  }
+
+  .form-root .img-circle-div .circle .profile-pic {
+    width: 90px;
+    height: 90px;
+  }
+
+  .form-root .img-circle-div .circle label.filelabel-icon {
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .form-root .img-circle-div .circle label.filelabel-icon .icon-mt {
+    font-size: 18px;
+    padding-left: 2px;
+  }
+
+  .form-root .img-circle-div .title-div {
+    padding: 0 0 0 12px;
+  }
+
+  .form-root .img-circle-div .title-div label.filelabel-text h5 {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+  }
+
+  .form-root .img-circle-div .title-div label.filelabel-text p {
+    font-size: 14px;
+  }
+
+  .account-settings-root-div {
+    margin: 0;
+  }
+
+  .form-root .img-circle-div {
+    padding: 0 0 20px 0;
+  }
+
+  .form-root .form-group label {
+    font-size: 14px;
+  }
+  /* End of account-settings */
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
