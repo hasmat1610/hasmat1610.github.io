@@ -97,7 +97,7 @@ ul.nav-right-list-ul {
 
     &.active {
       .link-btn-rounded {
-        background: #ff3131;
+        background: var(--primary-colour01);
         color: #fff;
       }
     }
@@ -152,7 +152,7 @@ ul.nav-right-list-ul {
       }
 
       &.show {
-        color: #ff3131;
+        color: var(--primary-colour01);
       }
     }
   }
@@ -166,7 +166,7 @@ ul.nav-right-list-ul {
   margin: 0 0 30px;
 
   .nav {
-    background: #ff3131;
+    background: var(--primary-colour01);
     border-radius: 10px;
     padding: 1px 2px;
 
@@ -185,7 +185,7 @@ ul.nav-right-list-ul {
 
     .nav-link.active,
     .show > .nav-link {
-      color: #ff3131;
+      color: var(--primary-colour01);
       background-color: #fff;
     }
   }
@@ -303,7 +303,7 @@ ul.nav-right-list-ul {
 .btn.btn-lock {
   padding: 1px 5px 2px;
   margin: 0;
-  background: #ff3131;
+  background: var(--primary-colour01);
   min-width: 68px;
   border-radius: 10px;
   min-height: 36px;
@@ -387,7 +387,7 @@ ul.nav-right-list-ul {
       background-color: #f6f6f5;
 
       .progress-bar {
-        background-color: #ff3131;
+        background-color: var(--primary-colour01);
       }
     }
   }
@@ -431,13 +431,13 @@ ul.nav-right-list-ul {
   padding: 9px 20px 6px;
   border-radius: 10px;
   min-height: 40px;
-  background: #ff3131;
+  background: var(--primary-colour01);
   transition: all 0.8s;
   text-transform: uppercase;
 
   &:hover {
     color: #fff;
-    box-shadow: 0 6px 10px 0 #ff31314d;
+    box-shadow: 0 6px 10px 0 var(--primary-colour01-e01);
   }
 }
 
@@ -502,8 +502,8 @@ ul.nav-right-list-ul {
 
   .page-item.active .page-link {
     color: #fff;
-    background-color: #ff3131;
-    border-color: #ff3131;
+    background-color: var(--primary-colour01);
+    border-color: var(--primary-colour01);
   }
 }
 

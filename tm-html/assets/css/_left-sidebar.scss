@@ -136,7 +136,7 @@
               .nav-link {
                 position: relative;
                 background: #fff;
-                color: #ff3131;
+                color: var(--primary-colour01);
 
                 &::before {
                   content: "";
@@ -373,7 +373,7 @@
         overflow-y: auto;
         position: relative;
         padding-top: 50px;
-        background: #ff3131;
+        background: var(--primary-colour01);
 
         .side-nav-item {
           overflow-y: scroll;
@@ -393,7 +393,7 @@
               &.active {
                 .nav-link {
                   .text-collapse-menu {
-                    color: #ff3131;
+                    color: var(--primary-colour01);
                   }
                 }
               }
