@@ -122,8 +122,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   display: block;
-  height: 100%;
-  min-height: 100vh;
+  min-height: 100px;
 }
 
 .wrapper .btn.focus,
@@ -140,16 +139,32 @@ body {
   max-width: 1280px;
 }
 
-.container-fluid-1920 {
-  max-width: 1735px;
-}
-
-.container-fluid-1820 {
-  max-width: 1585px;
-}
-
 .page-link:focus {
   box-shadow: none;
+}
+
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInDown {
+  0% {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1450px) {

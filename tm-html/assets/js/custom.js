@@ -5,6 +5,7 @@ $(document).ready(function () {
     $(".left-side-nav").addClass("active");
     $(".backdrop-menu-layer").addClass("active");
     $(".nav-dashboard-right").addClass("active");
+    $("body").addClass("overflow-fixed submenu-active");
   });
 
   $("#menu-closed").click(function () {
@@ -12,6 +13,7 @@ $(document).ready(function () {
     $(".left-side-nav").removeClass("active");
     $(".backdrop-menu-layer").removeClass("active");
     $(".nav-dashboard-right").removeClass("active");
+    $("body").removeClass("overflow-fixed submenu-active");
   });
 
   $(".backdrop-menu-layer").click(function () {
@@ -19,6 +21,7 @@ $(document).ready(function () {
     $(".left-side-nav").removeClass("active");
     $(".backdrop-menu-layer").removeClass("active");
     $(".nav-dashboard-right").removeClass("active");
+    $("body").removeClass("overflow-fixed submenu-active");
   });
   /* End of mobile menu */
 

@@ -504,7 +504,7 @@ p {
 
 /* main right content area */
 .middle-area-dashboard {
-  padding: 25px 40px 25px 340px;
+  padding: 0 40px 0 0;
   margin: 0;
   position: relative;
   will-change: padding;
@@ -513,7 +513,7 @@ p {
   .main-middle-area {
     padding: 0;
     position: relative;
-    min-height: calc(100vh - 50px);
+    min-height: 800px;
     width: 100%;
     transition: all 0.8s;
     background: #fff;
@@ -659,9 +659,13 @@ p {
   }
 }
 
+
+
 @import "./dasboard";
 @import "./courses";
 @import "./main";
+@import "./quiz";
+@import "./footer";
 
 @media (min-width: 1025px) {
   /* main right content area */
@@ -675,8 +679,10 @@ p {
 
   .left-side-nav-main-root {
     &.active {
+      width: 340px;
+
       .left-side-nav {
-        width: 340px;
+        width: 100%;
 
         .left-side-menu {
           .left-side-inner {
@@ -736,7 +742,7 @@ p {
 
   .middle-area-dashboard {
     &.active {
-      padding-left: 140px;
+      padding-left: 0;
 
       .nav-dashboard-row .nav-dashboard-left {
         padding-left: 0;
@@ -818,7 +824,7 @@ p {
 
   /**  main area  */
   .middle-area-dashboard {
-    padding: var(--padding-70) 0 0 0;
+    padding: 15px 0 0 0;
     margin: 0;
 
     .main-middle-area {
@@ -828,6 +834,14 @@ p {
       width: 100%;
       border-radius: 0;
     }
+  }
+
+  .footer-div .footer-row-div {
+    padding: 20px 20px 10px;
+  }
+
+  .footer-div .footer-card {
+    margin: 0 0 30px;
   }
 }
 

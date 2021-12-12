@@ -125,6 +125,10 @@ ul.nav-right-list-ul {
     width: 60px;
     margin: 0 0 20px 0;
   }
+
+  &.my-head-title-02-div {
+    margin-bottom: 10px;
+  }
 }
 
 .dropdown.dropdown-dot-dv {
@@ -529,6 +533,24 @@ ul.nav-right-list-ul {
   position: relative;
 }
 
+.wrapper.dashboard-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 60px;
+
+  .middle-area-dashboard {
+    flex: 1;
+  }
+}
+
+.main-section {
+  &.main-active-section {
+    padding-top: 40px;
+  }
+}
+
 @media (min-width: 1451px) and (max-width: 1650px) {
   .my-card-bx .my-card-bx-main-bv .btn-cst {
     font-size: 12px;
@@ -724,6 +746,11 @@ ul.nav-right-list-ul {
     font-size: 14px;
   }
   /* End of account-settings */
+
+  .wrapper.dashboard-wrapper {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
