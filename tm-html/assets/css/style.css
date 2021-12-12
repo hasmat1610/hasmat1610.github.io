@@ -3237,6 +3237,10 @@ ul.nav-right-list-ul li.active .link-btn-rounded {
     font-size: 16px;
     border-radius: 12px;
   }
+  .wrapper.dashboard-wrapper {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
 }
 
 video.video-fluid {
@@ -5879,7 +5883,7 @@ video.video-fluid {
   }
   /**  main area  */
   .middle-area-dashboard {
-    padding: var(--padding-70) 0 0 0;
+    padding: 15px 0 0 0;
     margin: 0;
   }
   .middle-area-dashboard .main-middle-area {

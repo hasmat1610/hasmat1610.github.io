@@ -25,301 +25,529 @@
 
 <body>
 
-    <div id="wrapper" class="wrapper dashboard-wrapper">
+    <div id="general-wrapper" class="general-wrapper">
 
-        <!-- left-side -->
-        <div class="left-side-nav-main-root active">
+        <header>
+            <div class="header-div header-center-div">
+              <div class="inner-top-header-div ">
+                <div class="container-fluid">
+                
+                    <div class="header-container">
 
-            <div class="left-side-nav">
-                <div class="left-side-nav-inner">
-
-                    <div class="nav-logo-section">
-                        <a href="index.html" class="dash-logo">
-                            <img src="assets/images/logo.svg" class="logo logo-main" alt="logo" />
-                            <img src="assets/images/logo-mini.svg" class="logo logo-mini" alt="logo" />
+                    <div class="logo-div">
+                        <a class="logo_link clearfix" href="#">
+                        <img src="assets/images/logo_RNP.png" class="img-fluid main-logo" alt="logo" />
                         </a>
-
-                        <div class="mobile-menu-div desktop-hidden">
-                            <button class="navbar-toggler mobile-menu-button" id="menu-open" type="button">
-                                <span class="navbar-toggler-icon"> <i class="bg-custom-icon menu-bar-icon"></i> </span>
-                            </button>
-                        </div>
                     </div>
 
-                    <div class="left-side-menu" id="dashboard-menu-clone">
-                        <div class="left-side-inner">
-
-                            <!--  mobile  -->
-                            <a href="javascript:void(0)" class="closebtn desktop-hidden" id="menu-closed">
-                                <span class="material-icons-outlined">clear</span>
+                    <nav class="nav-right-div">
+                        <div class="top-nav1">
+                        <div class="cd-shadow-layer"></div>
+                        <div class="nav-m-bar">
+                            <a onclick="openNav()" class="opennav" data-placement="bottom" title="" data-original-title="Menu">
+                            <span class="navbar-toggler-icon"> <i class="bg-custom-icon menu-bar-icon02"></i> </span>
                             </a>
-                            <!--  End of mobile  -->
-
-                            <div class="side-nav-item accordion" id="menu-collapse">
-                                <ul class="main-listing">
-
-                                    <li class="nav-item">
-                                        <a class="nav-link nav-normal" href="#" title="My Profile">
-                                            <span class="icon-span"> <i class="icon icomoon-1"></i> </span>
-                                            <span class="text-collapse-menu">My Profile </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link nav-normal" href="#" title="Add Prep Journey">
-                                            <span class="icon-span"> <i class="icon icomoon-2"></i> </span>
-                                            <span class="text-collapse-menu">Add Prep Journey </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link nav-normal" href="#" title="My Reviews">
-                                            <span class="icon-span"> <i class="icon icomoon-3"></i> </span>
-                                            <span class="text-collapse-menu">My Reviews </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link nav-normal" href="#" title="My Bookmarks">
-                                            <span class="icon-span"> <i class="icon icomoon-4"></i> </span>
-                                            <span class="text-collapse-menu">My Bookmarks </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link nav-normal" href="#" title="Access Courses">
-                                            <span class="icon-span"> <i class="icon icomoon-5"></i> </span>
-                                            <span class="text-collapse-menu">Access Courses </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link nav-normal" href="#" title="My Queries">
-                                            <span class="icon-span"> <i class="icon icomoon-6"></i> </span>
-                                            <span class="text-collapse-menu">My Queries </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item active">
-                                        <a class="nav-link nav-normal" href="#" title="My Rewards">
-                                            <span class="icon-span"> <i class="icon icomoon-7"></i> </span>
-                                            <span class="text-collapse-menu">My Rewards </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link nav-normal" href="#" title="Support Tickets">
-                                            <span class="icon-span"> <i class="icon icomoon-8"></i> </span>
-                                            <span class="text-collapse-menu">Support Tickets </span>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link nav-normal" href="#" title="Account Settings">
-                                            <span class="icon-span"> <i class="icon icomoon-9"></i> </span>
-                                            <span class="text-collapse-menu">Account Settings</span>
-                                        </a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link nav-normal" href="#" title="Logout">
-                                            <span class="icon-span"> <i class="icon icomoon-10"></i> </span>
-                                            <span class="text-collapse-menu">Logout </span>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                            </div>
-
                         </div>
-                    </div>
 
-                    <!--  mobile  -->
-                    <div id="cd-shadow-layer" class="menu-closed backdrop-menu-layer"></div>
-                    <!--  End of mobile  -->
+                        <div class="nav-div clearfix" id="mySidenav" >
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-                </div>
-            </div>
-        </div>
-        <!--  End of left-side  -->
-
-        <!-- Begin page content -->
-        <main role="main" class="middle-area-dashboard main-dashboard" id="main-dashboard">
-            <div class="main-middle-area">
-
-                <!--  Header  -->
-                <div class="header header-dashboard">
-                    <div class="container-fluid container-full">
-
-                        <div class="nav-dashboard-row">
-
-                            <div class="nav-dashboard-left">
-                                <div class="hg-menu-group"><button class="hg-menu-btn" id="menu-collpese-open"><span class="material-icons">arrow_back</span></button></div>
-                                
-                                <div class="search-div">
-                                    <div class="form-group search-form-group">
-                                        <div class="input-row">
-                                            <i class="icon icomoon-15"></i>
-                                            <input type="text" class="form-control form-search"
-                                                placeholder="Search..." />
+                            <div class="row-nav-div">
+                                <div class="search-nav-div">
+                                    <div class="search-div">
+                                        <div class="form-group search-form-group">
+                                            <div class="input-row">
+                                                <i class="icon icomoon-15"></i>
+                                                <input type="text" class="form-control form-search" placeholder="Search...">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="nav-dashboard-right">
-                                <ul class="nav-right-list-ul">
-                                    <li class="list-item">
-                                        <a href="#" class="link-btn-rounded">
-                                            <i class="icon icomoon-13"></i>
-                                        </a>
-                                    </li>
-                                    <li class="list-item active">
-                                        <a href="#" class="link-btn-rounded">
-                                            <i class="icon icomoon-12"></i>
-                                        </a>
-                                    </li>
-                                </ul>
+                                <div class="nav-list-div">
+                                    <ul class="nav ullist-inline" id="nav-res">
+                                        <li class="active"><a href="#" class="nav-link">Marketplace</a></li>
+                                        <li><a href="#" class="nav-link">Career Journey</a></li>
+                                        <li><a href="#" class="nav-link">Featured Reviews</a></li>
+                                        <li><a href="#" class="nav-link">Forums</a></li>
+                                        <li class="dropdown-li">
+                                            <div class="dropdown drop-left dropdown-custom-top">
+                                                <a class="btn btn-default dropdown-toggle" href="#" role="button" title="Haman Sharma" alt="Userlogo" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Free Resources
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <ul> 
+                                                        <li><a class="dropdown-item" href="#">Practice Exams</a></li> 
+                                                        <li><a class="dropdown-item" href="#">Flashcards</a></li> 
+                                                        <li><a class="dropdown-item" href="#">Preparation Journey's</a></li> 
+                                                        <li><a class="dropdown-item" href="#">Free YouTube Courses</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="#" class="nav-link">Blog</a></li>
+                                        <li class="dropdown-li user-profile-li pr-0">
+                                            <div class="dropdown drop-left dropdown-custom-top">
+                                                <a class="btn btn-default dropdown-toggle usericon" href="#" role="button" title="Haman Sharma" alt="Userlogo" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <div class="user-profile">
+                                                        HP
+                                                        <!-- <img src="assets/images/img-01.jpg" class="img-fluid" alt="user" /> -->
+                                                    </div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <ul>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#"> 
+                                                                <span class="txt">Profile</span> 
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#"> 
+                                                                <span class="txt">My Bookmarks</span> 
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#"> 
+                                                                <span class="txt">My Certificate Reviews</span> 
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#"> 
+                                                                <span class="txt">My Courses</span> 
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#"> 
+                                                                <span class="txt">Logout</span> 
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-
                         </div>
 
+                        </div>
+                    </nav>
                     </div>
+                
                 </div>
-                <!-- End of header -->
+              </div>	
+            </div>
+        </header>
 
-                <!--  main  -->
-                <div class="main-section">
-                    <div class="main-div">
-                        <div class="container-fluid container-full">
 
-                            <section class="account-settings-section">
-                                <div class="my-head-title-div">
-                                    <div class="title-dv">
-                                        <h2>Account Settings</h2>
-                                        <p>Change your account password</p>
-                                    </div>
-                                </div>
+        <main class="main-area-div">
+            <div id="wrapper" class="wrapper dashboard-wrapper">
 
-                                <div class="account-settings-root-div">
+                <!-- left-side -->
+                <div class="left-side-nav-main-root active">
+                    <div class="left-side-nav">
+                        <div class="left-side-nav-inner">
+        
+                            <div class="nav-logo-section">
+                                <a href="index.html" class="dash-logo">
+                                    <!-- <img src="assets/images/logo.svg" class="logo logo-main" alt="logo" />
+                                    <img src="assets/images/logo-mini.svg" class="logo logo-mini" alt="logo" /> -->
+
+                                    <span class="lg-txt-div">
+                                        <span class="lg-img-span"> <img src="assets/images/logo-mini.svg" class="logo lg-logo" alt="logo" /> </span>
+                                        <span class="lg-txt-span"> <b>Sherly</b> Baghla </span>
+                                    </span>
                                     
-                                    <div class="row">
-                                        <div class="col-lg-6 col-md-12">
-
-                                            <div class="general-settings-card">
-                                                <div class="form-root">
-
-                                                    <div class="row">
-
-                                                        <div class="col-lg-12 col-md-12">
-                                                            <div class="img-circle-div">
-                                                                <div class="circle">
-                                                                    <img class="profile-pic" src="assets/images/img-01.jpg" />
-                                                                    <label class="filelabel-icon" for="file-uploadpic">
-                                                                        <span class="material-icons icon-mt">edit</span>
-                                                                    </label>
-                                                                    <input class="file-upload d-none" id="file-uploadpic" type="file" accept="image/*">
-                                                                </div>
-                                              
-                                                                <div class="title-div">
-                                                                    <label class="filelabel-text" for="file-uploadpic">
-                                                                        <h5>Upload Profile Picture</h5>
-                                                                        <p>File Select</p>
-                                                                    </label>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-lg-12 col-md-12">
-                                                            <div class="form-group">
-                                                                <label class="form-label">Current Password</label>
-                                                                <input type="password" class="form-control" />
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-lg-12 col-md-12">
-                                                            <div class="form-group">
-                                                                <label class="form-label">New Password</label>
-                                                                <input type="password" class="form-control" />
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-lg-12 col-md-12">
-                                                            <div class="form-group">
-                                                                <label class="form-label">Confirm New Password</label>
-                                                                <input type="password" class="form-control" />
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-lg-12 col-md-12">
-                                                            <div class="btn-group mt-10">
-                                                                <button type="submit" class="btn btn-primary-common btn-mw150">Submit</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="col-lg-6 col-md-12">
-
-                                            <div class="general-settings-card-02">
-                                                <div class="form-root">
-
-                                                    <div class="row">
-                                                        
-                                                        <div class="col-lg-12 col-md-12">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck01">
-                                                                <label class="form-check-label" for="flexCheck01">Subscribe to Newsletter</label>
-                                                            </div>
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck02">
-                                                                <label class="form-check-label" for="flexCheck02">Subscribe to deals, promotions and coupons</label>
-                                                            </div>
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox" value="" id="flexCheck03">
-                                                                <label class="form-check-label" for="flexCheck03">Subscribe to announcements from Instructors</label>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-lg-12 col-md-12">
-                                                            <div class="btn-group mt-10">
-                                                                <button type="submit" class="btn btn-primary-common btn-mw150">Update</button>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-lg-12 col-md-12">
-                                                            <div class="delete-account-dv">
-                                                                <button type="submit" class="btn btn-danger-common btn-mw150">Delete Account</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-
+                                </a>
+        
+                                <div class="mobile-menu-div desktop-hidden">
+                                    <button class="navbar-toggler mobile-menu-button" id="menu-open" type="button">
+                                        <span class="navbar-toggler-icon"> <span class="txt"><b>Sub</b> Menu</span> </span>
+                                    </button>
                                 </div>
-                            </section>
-
+                            </div>
+        
+                            <div class="left-side-menu" id="dashboard-menu-clone">
+                                <div class="left-side-inner">
+        
+                                    <!--  mobile  -->
+                                    <a href="javascript:void(0)" class="closebtn desktop-hidden" id="menu-closed">
+                                        <span class="material-icons-outlined">clear</span>
+                                    </a>
+                                    <!--  End of mobile  -->
+        
+                                    <div class="side-nav-item accordion" id="menu-collapse">
+                                        <ul class="main-listing">
+        
+                                            <li class="nav-item">
+                                                <a class="nav-link nav-normal" href="#" title="My Profile">
+                                                    <span class="icon-span"> <i class="icon icomoon-1"></i> </span>
+                                                    <span class="text-collapse-menu">My Profile </span>
+                                                </a>
+                                            </li>
+        
+                                            <li class="nav-item">
+                                                <a class="nav-link nav-normal" href="#" title="Add Prep Journey">
+                                                    <span class="icon-span"> <i class="icon icomoon-2"></i> </span>
+                                                    <span class="text-collapse-menu">Add Prep Journey </span>
+                                                </a>
+                                            </li>
+        
+                                            <li class="nav-item">
+                                                <a class="nav-link nav-normal" href="#" title="My Reviews">
+                                                    <span class="icon-span"> <i class="icon icomoon-3"></i> </span>
+                                                    <span class="text-collapse-menu">My Reviews </span>
+                                                </a>
+                                            </li>
+        
+                                            <li class="nav-item">
+                                                <a class="nav-link nav-normal" href="#" title="My Bookmarks">
+                                                    <span class="icon-span"> <i class="icon icomoon-4"></i> </span>
+                                                    <span class="text-collapse-menu">My Bookmarks </span>
+                                                </a>
+                                            </li>
+        
+                                            <li class="nav-item">
+                                                <a class="nav-link nav-normal" href="#" title="Access Courses">
+                                                    <span class="icon-span"> <i class="icon icomoon-5"></i> </span>
+                                                    <span class="text-collapse-menu">Access Courses </span>
+                                                </a>
+                                            </li>
+        
+                                            <li class="nav-item">
+                                                <a class="nav-link nav-normal" href="#" title="My Queries">
+                                                    <span class="icon-span"> <i class="icon icomoon-6"></i> </span>
+                                                    <span class="text-collapse-menu">My Queries </span>
+                                                </a>
+                                            </li>
+        
+                                            <li class="nav-item active">
+                                                <a class="nav-link nav-normal" href="#" title="My Rewards">
+                                                    <span class="icon-span"> <i class="icon icomoon-7"></i> </span>
+                                                    <span class="text-collapse-menu">My Rewards </span>
+                                                </a>
+                                            </li>
+        
+                                            <li class="nav-item">
+                                                <a class="nav-link nav-normal" href="#" title="Support Tickets">
+                                                    <span class="icon-span"> <i class="icon icomoon-8"></i> </span>
+                                                    <span class="text-collapse-menu">Support Tickets </span>
+                                                </a>
+                                            </li>
+        
+                                            <li class="nav-item">
+                                                <a class="nav-link nav-normal" href="#" title="Account Settings">
+                                                    <span class="icon-span"> <i class="icon icomoon-9"></i> </span>
+                                                    <span class="text-collapse-menu">Account Settings</span>
+                                                </a>
+                                            </li>
+        
+                                            <li class="nav-item">
+                                                <a class="nav-link nav-normal" href="#" title="Logout">
+                                                    <span class="icon-span"> <i class="icon icomoon-10"></i> </span>
+                                                    <span class="text-collapse-menu">Logout </span>
+                                                </a>
+                                            </li>
+        
+                                        </ul>
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+                            <!--  mobile  -->
+                            <div id="cd-shadow-layer" class="menu-closed backdrop-menu-layer"></div>
+                            <!--  End of mobile  -->
+        
                         </div>
                     </div>
-                </div><!--  end of main  -->
-
-            </div>
+                </div>
+                <!--  End of left-side  -->
+        
+                <!-- Begin page content -->
+                <div role="main" class="middle-area-dashboard main-dashboard" id="main-dashboard">
+                    <div class="main-middle-area">
+        
+                        <!--  Header  -->
+                        <div class="header header-dashboard d-none">
+                            <div class="container-fluid container-full">
+        
+                                <div class="nav-dashboard-row">
+        
+                                    <div class="nav-dashboard-left">
+                                        <div class="hg-menu-group"><button class="hg-menu-btn" id="menu-collpese-open"><span class="material-icons">arrow_back</span></button></div>
+                                        
+                                        <div class="search-div">
+                                            <div class="form-group search-form-group">
+                                                <div class="input-row">
+                                                    <i class="icon icomoon-15"></i>
+                                                    <input type="text" class="form-control form-search"
+                                                        placeholder="Search..." />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="nav-dashboard-right">
+                                        <ul class="nav-right-list-ul">
+                                            <li class="list-item">
+                                                <a href="#" class="link-btn-rounded">
+                                                    <i class="icon icomoon-13"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-item active">
+                                                <a href="#" class="link-btn-rounded">
+                                                    <i class="icon icomoon-12"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+        
+                                </div>
+        
+                            </div>
+                        </div>
+                        <!-- End of header -->
+        
+                        <!--  main  -->
+                        <div class="main-section main-active-section">
+                            <div class="main-div">
+                                <div class="container-fluid container-full">
+        
+                                    <section class="account-settings-section">
+                                        <div class="my-head-title-div">
+                                            <div class="title-dv">
+                                                <h2>Account Settings</h2>
+                                                <p>Change your account password</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="account-settings-root-div">
+                                            
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-12">
+        
+                                                    <div class="general-settings-card">
+                                                        <div class="form-root">
+        
+                                                            <div class="row">
+        
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="img-circle-div">
+                                                                        <div class="circle">
+                                                                            <img class="profile-pic" src="assets/images/img-01.jpg" />
+                                                                            <label class="filelabel-icon" for="file-uploadpic">
+                                                                                <span class="material-icons icon-mt">edit</span>
+                                                                            </label>
+                                                                            <input class="file-upload d-none" id="file-uploadpic" type="file" accept="image/*">
+                                                                        </div>
+                                                      
+                                                                        <div class="title-div">
+                                                                            <label class="filelabel-text" for="file-uploadpic">
+                                                                                <h5>Upload Profile Picture</h5>
+                                                                                <p>File Select</p>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+        
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label class="form-label">Current Password</label>
+                                                                        <input type="password" class="form-control" />
+                                                                    </div>
+                                                                </div>
+        
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label class="form-label">New Password</label>
+                                                                        <input type="password" class="form-control" />
+                                                                    </div>
+                                                                </div>
+        
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label class="form-label">Confirm New Password</label>
+                                                                        <input type="password" class="form-control" />
+                                                                    </div>
+                                                                </div>
+        
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="btn-group mt-10">
+                                                                        <button type="submit" class="btn btn-primary-common btn-mw150">Submit</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+        
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+        
+                                                <div class="col-lg-6 col-md-12">
+        
+                                                    <div class="general-settings-card-02">
+                                                        <div class="form-root">
+        
+                                                            <div class="row">
+                                                                
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheck01">
+                                                                        <label class="form-check-label" for="flexCheck01">Subscribe to Newsletter</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheck02">
+                                                                        <label class="form-check-label" for="flexCheck02">Subscribe to deals, promotions and coupons</label>
+                                                                    </div>
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheck03">
+                                                                        <label class="form-check-label" for="flexCheck03">Subscribe to announcements from Instructors</label>
+                                                                    </div>
+                                                                </div>
+        
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="btn-group mt-10">
+                                                                        <button type="submit" class="btn btn-primary-common btn-mw150">Update</button>
+                                                                    </div>
+                                                                </div>
+        
+                                                                <div class="col-lg-12 col-md-12">
+                                                                    <div class="delete-account-dv">
+                                                                        <button type="submit" class="btn btn-danger-common btn-mw150">Delete Account</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+        
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+        
+                                        </div>
+                                    </section>
+        
+                                </div>
+                            </div>
+                        </div><!--  end of main  -->
+        
+                    </div>
+                </div>
+        
+            </div><!-- end of wrapper -->
         </main>
 
-    </div><!-- end of wrapper -->
+        <footer>
+            <div class="footer-div">
+                <div class="container">
+                    <div class="footer-row-div">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="footer-card">
+                                    <div class="footer-logo-div">
+                                        <img src="assets/images/logo_RNP.png" class="img-fluid img-footer" alt="logo" >
+                                    </div>
+
+                                    <div class="social-dv">
+                                        <ul class="footer-social-ul">
+                                            <li>
+                                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                            </li>
+                                            <li> 
+                                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a> 
+                                            </li>
+                                            <li>
+                                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="es-box-div">
+                                        <div class="e-div e-address-div">
+                                            <span class="icon-span"><span class="material-icons icon"> home </span></span> <span class="text">4th Floor Krishna Icon Near Town hall, A V road, Gujarat</span>
+                                        </div>
+                                        <div class="e-div e-email-div">
+                                            <a class="link link-icon-a" href="mailto:prganvani@gmail.com">
+                                                <span class="icon-span"><span class="material-icons icon"> mail </span></span> <span class="text">prganvani@gmail.com</span>
+                                            </a>
+                                        </div>
+                                        <div class="e-div e-phone-div">
+                                            <a class="link link-icon-a" href="tel:54544566560"> 
+                                                <span class="icon-span"><span class="material-icons icon"> call </span></span> <span class="text">8141113900</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="footer-card">
+                                            <h4>Quick Links</h4>
+                                            <div class="footer-desc-div">
+                                                <ul>
+                                                    <li><a href="#">Add Preparation Journey</a></li>
+                                                    <li><a href="#">Marketplace</a></li>
+                                                    <li><a href="#">Developer Options</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="footer-card">
+                                            <h4>Services</h4>
+                                            <div class="footer-desc-div">
+                                                <ul>
+                                                    <li><a href="#">Services 01</a></li>
+                                                    <li><a href="#">Services 02</a></li>
+                                                    <li><a href="#">Services 03</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-12">
+                                        <div class="footer-card">
+                                            <h4>Industries</h4>
+                                            <div class="footer-desc-div">
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, suscipit consequatur. Veniam asperiores nesciunt, quaerat id unde vero ipsum consequatur error possimus ex, minima dignissimos, labore neque doloribus pariatur! Reiciendis doloribus obcaecati dignissimos adipisci maiores, laboriosam voluptas ad! Quas excepturi culpa eaque.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-div">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="footer-copy-dv">
+                                <p>&copy; 2021 Prevention pg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </footer>
+
+    </div>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
