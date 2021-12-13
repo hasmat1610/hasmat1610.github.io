@@ -659,13 +659,12 @@ p {
   }
 }
 
-
-
 @import "./dasboard";
 @import "./courses";
 @import "./main";
 @import "./quiz";
 @import "./footer";
+@import "./auth-style";
 
 @media (min-width: 1025px) {
   /* main right content area */
