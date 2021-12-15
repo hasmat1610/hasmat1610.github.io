@@ -1,0 +1,168 @@
+.footer-div {
+  background: #312c45;
+  position: relative;
+  padding: 30px 0;
+  background: linear-gradient(90deg, #312c45 28px, transparent 1%) 50%,
+    linear-gradient(#312c45 28px, transparent 1%) 50%, #30697a;
+  background-size: 30px 30px;
+
+  .footer-row-div {
+    padding: 40px 40px 20px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 0 20px 0 #312c4505;
+  }
+
+  .footer-card {
+    margin: 0 0 20px;
+
+    .footer-logo-div {
+      padding: 0;
+      margin: 0 0 20px;
+      width: 100%;
+
+      .img-footer {
+        width: 250px;
+      }
+    }
+
+    .social-dv {
+      margin: 0 0 15px;
+
+      .footer-social-ul {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        li {
+          margin: 0 10px 10px 0;
+
+          .social-link {
+            height: 36px;
+            width: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100px;
+            background: var(--primary-colour01);
+            color: #fff;
+            transition: all 0.8s;
+
+            &:hover {
+              background: #312c45;
+            }
+          }
+        }
+      }
+    }
+
+    .es-box-div {
+      .e-div {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: left;
+        letter-spacing: 0;
+        color: #181b1a;
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 15px;
+        width: 100%;
+
+        .icon-span {
+          width: 32px;
+          display: flex;
+          flex-wrap: wrap;
+          padding: 1px 12px 0 0;
+
+          .icon {
+            color: #312c45;
+            font-size: 21px;
+          }
+        }
+
+        .text {
+          flex: 1;
+        }
+
+        .link.link-icon-a {
+          display: flex;
+          flex-wrap: wrap;
+          color: inherit;
+        }
+      }
+
+      .e-div.e-email-div {
+        .icon-span .icon {
+          font-size: 20px;
+        }
+      }
+    }
+
+    h4 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.5;
+      text-align: left;
+      letter-spacing: 0;
+      color: #181b1a;
+      margin: 0 0 12px;
+      width: 100%;
+      display: block;
+    }
+
+    .footer-desc-div {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      text-align: left;
+      letter-spacing: 0;
+      color: #181b1a;
+      width: 100%;
+
+      ul {
+        li {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 1.5;
+          text-align: left;
+          letter-spacing: 0;
+          color: #181b1a;
+          margin: 0 0 6px;
+
+          a {
+            color: inherit;
+            transition: all 0.8s;
+
+            &:hover {
+              color: var(--primary-colour01);
+            }
+          }
+        }
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #181b1a;
+      }
+    }
+  }
+}
+
+.footer-bottom-div {
+  padding: 20px 0;
+  background: #312c45;
+  border-top: 1px solid #f5f5f433;
+  position: relative;
+
+  .footer-copy-dv {
+    p {
+      width: 100%;
+      text-align: center;
+      display: block;
+      color: #fff;
+    }
+  }
+}
