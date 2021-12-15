@@ -789,6 +789,182 @@
 }
 /* End of Modal */
 
+/* View History */
+
+.view-hs-content-section {
+  padding: 40px 0;
+  position: relative;
+}
+
+.vhs-accordion-card {
+  .vhs-header-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+
+    .vhs-header-col {
+      flex: 1;
+    }
+
+    .vhs-grid01 {
+      width: 20%;
+    }
+
+    .vhs-grid02 {
+      width: 20%;
+    }
+
+    .vhs-grid03 {
+      width: 40%;
+      flex: 0 0 40%;
+    }
+
+    .vhs-grid04 {
+      width: 15%;
+      flex: 0 0 15%;
+    }
+
+    h4 {
+      font-size: 18px;
+      line-height: 1.5;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #181b1a;
+    }
+
+    h4.fail {
+      color: #f80000;
+    }
+
+    h4.success {
+      color: #48c248;
+    }
+  }
+
+  .vhs-body-dv {
+    padding: 20px 0;
+    position: relative;
+  }
+
+  .quiz-result-content-dv {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+
+    h4 {
+      font-size: 18px;
+      line-height: 1.5;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #181b1a;
+      margin: 0 0 5px;
+      width: 100%;
+      display: block;
+
+      .txt01 {
+        color: #181b1a;
+      }
+    }
+
+    h4.fail {
+      color: #f80000;
+    }
+
+    h4.success {
+      color: #48c248;
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.5;
+      display: block;
+      color: #181b1a;
+      margin: 15px 0 15px;
+      width: 100%;
+
+      strong {
+        font-size: 36px;
+        margin: 0 5px 0 0;
+      }
+
+      small {
+        font-size: 18px;
+        color: var(--primary-colour01);
+      }
+    }
+
+    p {
+      color: #181b1a;
+      margin: 0 0 20px;
+    }
+
+    .btn-dv {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 5px 0 0 0;
+    }
+
+    .btn.btn-cst {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .icon {
+        margin: 0 8px 0 0;
+        font-size: 21px;
+      }
+    }
+
+    .btn-cst.btn-primary03 {
+      padding: 9px 20px 8px;
+    }
+  }
+
+  .quiz-result-col-rg {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.view-hs-accordion {
+  .accordion-button:not(.collapsed) {
+    color: #181b1a;
+    background-color: #40aeb429;
+  }
+
+  .accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .accordion-item:first-of-type {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .accordion-item:last-of-type {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none;
+  }
+}
+
+.view-hs-listing {
+  margin: 0 0 20px;
+}
+/* End of view history */
+
 @media (max-width: 1024px) {
 }
 
@@ -1065,7 +1241,7 @@
 
   .button-bottom-qz-dv {
     padding: 0;
-    
+
     .button-bottom-qz-row {
       display: flex;
       flex-wrap: wrap;
@@ -1083,6 +1259,73 @@
     }
   }
   /* End of Live Quiz */
+
+  /* View history */
+  .vhs-accordion-card .vhs-header-row {
+    width: 100%;
+    padding: 0 15px 0 0;
+  }
+
+  .vhs-accordion-card .vhs-header-row .vhs-grid01 {
+    width: 50%;
+    flex: 0 0 50%;
+  }
+
+  .vhs-accordion-card .vhs-header-row .vhs-grid02 {
+    width: 50%;
+    flex: 0 0 50%;
+
+    p {
+      text-align: right;
+    }
+  }
+
+  .vhs-accordion-card .vhs-header-row .vhs-grid03 {
+    width: 100%;
+    flex: 0 0 100%;
+    margin: 10px 0 10px;
+  }
+
+  .vhs-accordion-card .vhs-header-row .vhs-grid04 {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .view-hs-accordion .accordion-item .accordion-button {
+    padding: 15px 15px;
+  }
+
+  .vhs-accordion-card .vhs-body-dv {
+    padding: 0;
+  }
+
+  .vhs-accordion-card .quiz-result-content-dv {
+    padding: 20px 0;
+  }
+
+  .vhs-accordion-card .quiz-result-content-dv h4 {
+    text-align: center;
+  }
+
+  .vhs-accordion-card .quiz-result-content-dv h2 {
+    margin: 10px 0 15px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .vhs-accordion-card .quiz-result-content-dv p {
+    text-align: center;
+  }
+
+  .vhs-accordion-card .quiz-result-content-dv .btn-dv {
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .vhs-accordion-card .chart-container {
+    height: 300px;
+  }
+  /* End of view history */
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

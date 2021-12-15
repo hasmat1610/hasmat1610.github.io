@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>View History</title>
+    <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
+    <meta name="theme-color" content="#312C45">
+    <meta name="msapplication-navbutton-color" content="#312C45">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#312C45">
+    <link href='assets/images/favicon.png' rel='shortcut icon'>
+    <link href="assets/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+    <link href="assets/css/all.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icomoon.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+    <script src="assets/js/modernizr.js"></script>
+</head>
+
+<body>
+
+    <div id="general-wrapper" class="general-wrapper">
+
+        <header>
+            <div class="header-div header-center-div">
+              <div class="inner-top-header-div ">
+                <div class="container-fluid">
+                
+                    <div class="header-container">
+
+                    <div class="logo-div">
+                        <a class="logo_link clearfix" href="#">
+                        <img src="assets/images/logo_RNP.png" class="img-fluid main-logo" alt="logo" />
+                        </a>
+                    </div>
+
+                    <nav class="nav-right-div">
+                        <div class="top-nav1">
+                        <div class="cd-shadow-layer"></div>
+                        <div class="nav-m-bar">
+                            <a onclick="openNav()" class="opennav" data-placement="bottom" title="" data-original-title="Menu">
+                            <span class="navbar-toggler-icon"> <i class="bg-custom-icon menu-bar-icon02"></i> </span>
+                            </a>
+                        </div>
+
+                        <div class="nav-div clearfix" id="mySidenav" >
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                            <div class="row-nav-div">
+                                <div class="search-nav-div">
+                                    <div class="search-div">
+                                        <div class="form-group search-form-group">
+                                            <div class="input-row">
+                                                <i class="icon icomoon-15"></i>
+                                                <input type="text" class="form-control form-search" placeholder="Search...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nav-list-div">
+                                    <ul class="nav ullist-inline" id="nav-res">
+                                        <li class="active"><a href="#" class="nav-link">Marketplace</a></li>
+                                        <li><a href="#" class="nav-link">Career Journey</a></li>
+                                        <li><a href="#" class="nav-link">Featured Reviews</a></li>
+                                        <li><a href="#" class="nav-link">Forums</a></li>
+                                        <li class="dropdown-li">
+                                            <div class="dropdown drop-left dropdown-custom-top">
+                                                <a class="btn btn-default dropdown-toggle" href="#" role="button" title="Haman Sharma" alt="Userlogo" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Free Resources
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <ul> 
+                                                        <li><a class="dropdown-item" href="#">Practice Exams</a></li> 
+                                                        <li><a class="dropdown-item" href="#">Flashcards</a></li> 
+                                                        <li><a class="dropdown-item" href="#">Preparation Journey's</a></li> 
+                                                        <li><a class="dropdown-item" href="#">Free YouTube Courses</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li><a href="#" class="nav-link">Blog</a></li>
+                                        <li class="dropdown-li user-profile-li pr-0">
+                                            <div class="dropdown drop-left dropdown-custom-top">
+                                                <a class="btn btn-default dropdown-toggle usericon" href="#" role="button" title="Haman Sharma" alt="Userlogo" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <div class="user-profile">
+                                                        HP
+                                                        <!-- <img src="assets/images/img-01.jpg" class="img-fluid" alt="user" /> -->
+                                                    </div>
+                                                </a>
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <ul>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#"> 
+                                                                <span class="txt">Profile</span> 
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#"> 
+                                                                <span class="txt">My Bookmarks</span> 
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#"> 
+                                                                <span class="txt">My Certificate Reviews</span> 
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#"> 
+                                                                <span class="txt">My Courses</span> 
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#"> 
+                                                                <span class="txt">Logout</span> 
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+                    </nav>
+                    </div>
+                
+                </div>
+              </div>	
+            </div>
+        </header>
+
+        <main>
+            <div class="main-area-div">
+
+                <section class="text-banner-section">
+                    <div class="container">
+                        <div class="text-banner-inner-div">
+                            <h1>Practice Exam 1</h1>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="view-hs-content-section">
+                    <div class="container">
+                        <div class="view-hs-content-inner-div">
+
+                            <div class="txt-back-div">
+                                <div class="btn-div">
+                                    <a href="#" class="btn btn-back-pro"> <span class="material-icons-outlined icon">chevron_left</span> Back to Exams </a>
+                                </div>
+                            </div>
+
+                            <div class="view-hs-listing">
+                                
+                                <div class="accordion view-hs-accordion" id="viewhsaccordion">
+
+                                    <div class="accordion-item vhs-accordion-card">
+                                        <div class="accordion-header" id="viewheading01">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#viewcollapse01" aria-expanded="true" aria-controls="viewcollapse01">
+                                                
+                                                <div class="vhs-header-row">
+                                                    <div class="vhs-header-col vhs-grid01">
+                                                        <h4 class="fail">FAIL!</h4>
+                                                    </div>
+                                                    <div class="vhs-header-col vhs-grid02">
+                                                        <p><span class="count"><strong> 0% </strong></span></p>
+                                                    </div>
+                                                    <div class="vhs-header-col vhs-grid03">
+                                                        <p>1 hours 56 minutes 41 seconds</p>
+                                                    </div>
+                                                    <div class="vhs-header-col vhs-grid04">
+                                                        <p>2021-12-09</p>
+                                                    </div>
+                                                </div>
+
+                                            </button>
+                                        </div>
+                                        <div id="viewcollapse01" class="accordion-collapse collapse show" aria-labelledby="viewheading01" data-bs-parent="#viewhsaccordion">
+                                            <div class="accordion-body">
+                                                
+                                                <div class="vhs-body-dv">
+                                                    <div class="row quiz-result-row">
+                                                        <div class="col-lg-6 col-md-6 quiz-result-col-lf">
+                                                            <div class="chart-bx-card">
+                                                                <div id="chartContainer_1" class="chart-container"></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-6 col-md-6 quiz-result-col-rg">
+                                                            <div class="quiz-result-content-dv">
+                                                                <h4 class="fail"><span class="txt01"> Attempt: 3 </span> <span class="txt02">FAIL!</span> </h4>
+                                                                <h2><strong> 2% </strong> <span class="count-txt">correct <small>(1/66)</small></span></h2>
+                                                                <p>
+                                                                    <span class="blk"> 45 seconds </span>
+                                                                    <span class="blk"> 2021-11-25 05:38 AM </span>
+                                                                </p>
+                                                                <div class="btn-dv">
+                                                                    <a href="#" class="btn btn-cst btn-primary03"><span class="material-icons icon">reviews</span> <span class="txt">Review Questions</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item vhs-accordion-card">
+                                        <div class="accordion-header" id="viewheading02">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#viewcollapse02" aria-expanded="false" aria-controls="viewcollapse02">
+                                                
+                                                <div class="vhs-header-row">
+                                                    <div class="vhs-header-col vhs-grid01">
+                                                        <h4 class="fail">FAIL!</h4>
+                                                    </div>
+                                                    <div class="vhs-header-col vhs-grid02">
+                                                        <p><span class="count"><strong> 0% </strong></span></p>
+                                                    </div>
+                                                    <div class="vhs-header-col vhs-grid03">
+                                                        <p>1 hours 56 minutes 41 seconds</p>
+                                                    </div>
+                                                    <div class="vhs-header-col vhs-grid04">
+                                                        <p>2021-12-09</p>
+                                                    </div>
+                                                </div>
+
+                                            </button>
+                                        </div>
+                                        <div id="viewcollapse02" class="accordion-collapse collapse" aria-labelledby="viewheading02" data-bs-parent="#viewhsaccordion">
+                                            <div class="accordion-body">
+                                                
+                                                <div class="vhs-body-dv">
+                                                    <div class="row quiz-result-row">
+                                                        <div class="col-lg-6 col-md-6 quiz-result-col-lf">
+                                                            <div class="chart-bx-card">
+                                                                <div id="chartContainer_1" class="chart-container"></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-6 col-md-6 quiz-result-col-rg">
+                                                            <div class="quiz-result-content-dv">
+                                                                <h4 class="fail"><span class="txt01"> Attempt: 3 </span> <span class="txt02">FAIL!</span> </h4>
+                                                                <h2><strong> 2% </strong> <span class="count-txt">correct <small>(1/66)</small></span></h2>
+                                                                <p>
+                                                                    <span class="blk"> 45 seconds </span>
+                                                                    <span class="blk"> 2021-11-25 05:38 AM </span>
+                                                                </p>
+                                                                <div class="btn-dv">
+                                                                    <a href="#" class="btn btn-cst btn-primary03"><span class="material-icons icon">reviews</span> <span class="txt">Review Questions</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item vhs-accordion-card">
+                                        <div class="accordion-header" id="viewheading03">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#viewcollapse03" aria-expanded="false" aria-controls="viewcollapse03">
+                                                
+                                                <div class="vhs-header-row">
+                                                    <div class="vhs-header-col vhs-grid01">
+                                                        <h4 class="success">Success!</h4>
+                                                    </div>
+                                                    <div class="vhs-header-col vhs-grid02">
+                                                        <p><span class="count"><strong> 0% </strong></span></p>
+                                                    </div>
+                                                    <div class="vhs-header-col vhs-grid03">
+                                                        <p>1 hours 56 minutes 41 seconds</p>
+                                                    </div>
+                                                    <div class="vhs-header-col vhs-grid04">
+                                                        <p>2021-12-09</p>
+                                                    </div>
+                                                </div>
+
+                                            </button>
+                                        </div>
+                                        <div id="viewcollapse03" class="accordion-collapse collapse" aria-labelledby="viewheading03" data-bs-parent="#viewhsaccordion">
+                                            <div class="accordion-body">
+                                                
+                                                <div class="vhs-body-dv">
+                                                    <div class="row quiz-result-row">
+                                                        <div class="col-lg-6 col-md-6 quiz-result-col-lf">
+                                                            <div class="chart-bx-card">
+                                                                <div id="chartContainer_1" class="chart-container"></div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-6 col-md-6 quiz-result-col-rg">
+                                                            <div class="quiz-result-content-dv">
+                                                                <h4 class="success"><span class="txt01"> Attempt: 3 </span> <span class="txt02">Success!</span> </h4>
+                                                                <h2><strong> 2% </strong> <span class="count-txt">correct <small>(1/66)</small></span></h2>
+                                                                <p>
+                                                                    <span class="blk"> 45 seconds </span>
+                                                                    <span class="blk"> 2021-11-25 05:38 AM </span>
+                                                                </p>
+                                                                <div class="btn-dv">
+                                                                    <a href="#" class="btn btn-cst btn-primary03"><span class="material-icons icon">reviews</span> <span class="txt">Review Questions</span></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-div">
+                <div class="container">
+                    <div class="footer-row-div">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4">
+                                <div class="footer-card">
+                                    <div class="footer-logo-div">
+                                        <img src="assets/images/logo_RNP.png" class="img-fluid img-footer" alt="logo" >
+                                    </div>
+
+                                    <div class="social-dv">
+                                        <ul class="footer-social-ul">
+                                            <li>
+                                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                            </li>
+                                            <li> 
+                                            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a> 
+                                            </li>
+                                            <li>
+                                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="es-box-div">
+                                        <div class="e-div e-address-div">
+                                            <span class="icon-span"><span class="material-icons icon"> home </span></span> <span class="text">4th Floor Krishna Icon Near Town hall, A V road, Gujarat</span>
+                                        </div>
+                                        <div class="e-div e-email-div">
+                                            <a class="link link-icon-a" href="mailto:prganvani@gmail.com">
+                                                <span class="icon-span"><span class="material-icons icon"> mail </span></span> <span class="text">prganvani@gmail.com</span>
+                                            </a>
+                                        </div>
+                                        <div class="e-div e-phone-div">
+                                            <a class="link link-icon-a" href="tel:54544566560"> 
+                                                <span class="icon-span"><span class="material-icons icon"> call </span></span> <span class="text">8141113900</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-8 col-md-8">
+
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="footer-card">
+                                            <h4>Quick Links</h4>
+                                            <div class="footer-desc-div">
+                                                <ul>
+                                                    <li><a href="#">Add Preparation Journey</a></li>
+                                                    <li><a href="#">Marketplace</a></li>
+                                                    <li><a href="#">Developer Options</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6">
+                                        <div class="footer-card">
+                                            <h4>Services</h4>
+                                            <div class="footer-desc-div">
+                                                <ul>
+                                                    <li><a href="#">Services 01</a></li>
+                                                    <li><a href="#">Services 02</a></li>
+                                                    <li><a href="#">Services 03</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-12">
+                                        <div class="footer-card">
+                                            <h4>Industries</h4>
+                                            <div class="footer-desc-div">
+                                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet, suscipit consequatur. Veniam asperiores nesciunt, quaerat id unde vero ipsum consequatur error possimus ex, minima dignissimos, labore neque doloribus pariatur! Reiciendis doloribus obcaecati dignissimos adipisci maiores, laboriosam voluptas ad! Quas excepturi culpa eaque.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom-div">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="footer-copy-dv">
+                                <p>&copy; 2021 Prevention pg</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </footer>
+
+    </div><!-- end of wrapper -->
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script>
+        Highcharts.chart('chartContainer_1', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: ''
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            accessibility: {
+                point: {
+                    valueSuffix: '%'
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            exporting: { enabled: false },
+            plotOptions: {
+                pie: {
+                  colors: ["green","Red","grey"],
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Results',
+                colorByPoint: true,
+                data: [{"name":"Right","symbol":"Right","y":1},{"name":"Wrong","symbol":"Wrong","y":1},{"name":"Skipped","symbol":"Skipped","y":64}]            }]
+        });
+    </script>
+
+</body>
+</html>
