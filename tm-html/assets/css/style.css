@@ -5684,6 +5684,32 @@ video.video-fluid {
   margin: 0 0 20px;
 }
 
+.quiz-review-main-section .header-txt-div h2 {
+  margin: 0 0 20px;
+}
+
+.progress-root {
+  margin: 0 0 30px;
+}
+
+.progress-root .progress {
+  height: 20px;
+  border-radius: 16px;
+  background-color: #f6f6f5;
+}
+
+.progress-root .progress .progress-bar {
+  background-color: var(--primary-colour01);
+}
+
+.progress-root .bg-info {
+  background-color: #50ac22 !important;
+}
+
+.progress-root .bg-danger {
+  background-color: #cd5b5b !important;
+}
+
 @media (max-width: 767px) {
   .quiz-header-div {
     position: relative;

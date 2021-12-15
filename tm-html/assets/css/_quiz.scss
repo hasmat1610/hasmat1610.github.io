@@ -1169,6 +1169,32 @@
 
   .header-txt-div {
     margin: 0 0 20px;
+
+    h2 {
+      margin: 0 0 20px;
+    }
+  }
+}
+
+.progress-root {
+  margin: 0 0 30px;
+
+  .progress {
+    height: 20px;
+    border-radius: 16px;
+    background-color: #f6f6f5;
+
+    .progress-bar {
+      background-color: var(--primary-colour01);
+    }
+  }
+
+  .bg-info {
+    background-color: #50ac22 !important;
+  }
+
+  .bg-danger {
+    background-color: #cd5b5b!important;
   }
 }
 
