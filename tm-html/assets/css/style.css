@@ -5467,6 +5467,223 @@ video.video-fluid {
 }
 
 /* End of view history */
+.view-review-que-dt-div .vhs-accordion-card {
+  padding: 10px 30px;
+  margin: 0 0 20px;
+  border-radius: 24px;
+  position: relative;
+  border: 1px solid #dfdfe3;
+  -webkit-box-shadow: 0px 4px 48px #0000000d;
+          box-shadow: 0px 4px 48px #0000000d;
+}
+
+.quiz-card-review-bx {
+  margin: 0 0 20px;
+}
+
+.quiz-card-review-bx .quiz-card-center-div {
+  padding: 5px 5px 0;
+}
+
+.quiz-card-review-bx .quiz-card-header-bx h2 {
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.quiz-card-review-bx .quiz-card-header-bx h2 .qz-number {
+  padding: 5px;
+}
+
+.quiz-card-review-bx .quiz-card-body-bx {
+  padding: 5px 14px;
+}
+
+.quiz-card-review-bx .general-form-dv .chexkbox-dv {
+  margin: 0 0 15px;
+}
+
+.quiz-card-review-bx .general-form-dv .chexkbox-dv .checkbox-label {
+  font-size: 14px;
+  padding-left: 35px;
+}
+
+.quiz-card-review-bx .general-form-dv .chexkbox-dv .checkbox-label::before {
+  height: 20px;
+  width: 20px;
+  top: 2px;
+}
+
+.quiz-card-review-bx .general-form-dv .chexkbox-dv .checkbox-input:checked + .checkbox-label::after {
+  height: 20px;
+  width: 20px;
+  font-size: 18px;
+  top: 2px;
+}
+
+.quiz-card-review-bx .general-form-dv .radio-dv {
+  margin: 0 0 15px;
+}
+
+.quiz-card-review-bx .general-form-dv .radio-dv .radio-label {
+  font-size: 14px;
+  padding-left: 35px;
+}
+
+.quiz-card-review-bx .general-form-dv .radio-dv .radio-label::before {
+  height: 20px;
+  width: 20px;
+}
+
+.quiz-card-review-bx .general-form-dv .radio-dv .radio-input:checked + .radio-label::after {
+  font-size: 18px;
+  left: 4px;
+  top: 5px;
+  height: 12px;
+  width: 12px;
+}
+
+.quiz-card-review-bx .btn-group-dv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 20px 0 0 0;
+  position: relative;
+}
+
+.quiz-card-review-bx .btn-group-dv .btn-group-rt-dv {
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+.quiz-card-review-bx .btn-group-dv .btn-cst {
+  padding-bottom: 7px;
+}
+
+.quiz-card-review-bx .btn-group-dv .btn.btn-cst.btn-primary-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quiz-card-review-bx .btn-group-dv .btn.btn-cst.btn-primary-line .icon {
+  margin: 0 5px 0 -2px;
+}
+
+.quiz-card-review-bx .collapse-root .card {
+  margin: 10px 0 0;
+  font-size: 16px;
+  color: #181b1a;
+  line-height: 1.6;
+  width: 100%;
+  display: block;
+  padding: 15px 15px;
+  background: #40aeb41a;
+  border-radius: 8px;
+  border: 1px solid #40aeb4;
+}
+
+.quiz-card-review-bx .collapse-root .card .block-txt {
+  display: block;
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+
+.quiz-card-review-bx .collapse-root .card .block-txt b {
+  font-weight: 600;
+  margin: 0 5px 0 0;
+}
+
+.quiz-card-review-bx .collapse-root .card .block-txt small span {
+  background: #40aeb4;
+  color: #fff;
+  min-width: 24px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  margin: 0 5px 0 0;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 12px;
+  min-height: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.quiz-card-review-bx .collapse-root .card p {
+  font-size: 14px;
+}
+
+.quiz-card-review-bx .collapse-root .card p a {
+  color: #02b3e4;
+  text-transform: capitalize;
+}
+
+.quiz-card-review-bx .collapse-root .card p b {
+  font-weight: 500;
+}
+
+.quiz-card-review-bx .label-general-dv {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+}
+
+.quiz-card-review-bx .label-general-dv ul {
+  color: #181b1a;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.quiz-card-review-bx .label-general-dv ul li {
+  margin: 0 0 10px;
+}
+
+.quiz-card-review-bx .collapse-root.wrong-collapse-root .card {
+  background: #cd5b5b1a;
+  border-color: #cd5b5b;
+}
+
+.quiz-card-review-bx .collapse-root.not-attempt-collapse-root .card {
+  background: #50ac221a;
+  border-color: #50ac22;
+}
+
+.quiz-card-review-bx .collapse-root.right-collapse-root .card {
+  background: #02b2e31a;
+  border-color: #02b3e4;
+}
+
+.quiz-review-main-section {
+  padding: 0;
+  margin: 0 0 80px;
+  position: relative;
+}
+
+.quiz-review-main-section .header-txt-div {
+  margin: 0 0 20px;
+}
+
 @media (max-width: 767px) {
   .quiz-header-div {
     position: relative;
@@ -5783,6 +6000,52 @@ video.video-fluid {
     height: 300px;
   }
   /* End of view history */
+  .quiz-card-review-bx .quiz-card-header-bx h2 {
+    font-size: 14px;
+    padding: 0 0 12px;
+    margin: 0 0 10px;
+  }
+  .quiz-card-review-bx .quiz-card-body-bx {
+    padding: 5px 0 10px;
+  }
+  .quiz-card-review-bx .general-form-dv .chexkbox-dv {
+    margin: 0 0 10px;
+  }
+  .quiz-card-review-bx .general-form-dv .chexkbox-dv .checkbox-label {
+    padding-left: 30px;
+    padding-top: 2px;
+  }
+  .quiz-card-review-bx .btn-group-dv {
+    padding: 10px 0 0 0;
+  }
+  .quiz-card-review-bx .btn-group-dv .btn-group-lf-dv {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+  .quiz-card-review-bx .btn-group-dv .btn-group-rt-dv {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 100%;
+  }
+  .quiz-card-review-bx .btn-group-dv .btn-cst {
+    width: 100%;
+  }
+  .quiz-card-review-bx .btn-group-dv .btn.btn-cst.btn-primary-line {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .quiz-review-main-section .header-txt-div h2 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .quiz-review-main-section {
+    margin: 0 0 60px;
+  }
+  .quiz-card-review-bx .label-general-dv ul {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
