@@ -517,6 +517,89 @@ header {
       }
     }
   }
+
+  .top-nav {
+    background-color: #312c45;
+    color: #fff;
+    position: relative;
+    padding: 0 15px;
+    display: flex;
+    margin: 0 auto;
+    transition: all 0.8s;
+
+    .social-list-top-root {
+      .social-list-top {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 46px;
+        width: 100%;
+
+        li {
+          margin: 0 10px 0 0;
+
+          a {
+            height: 36px;
+            width: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 100px;
+            background: #181b1a;
+            color: #fff;
+            transition: all 0.8s;
+          }
+        }
+      }
+    }
+
+    .navbar-info-top {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      min-height: 46px;
+
+      li {
+        padding: 0 25px 0 25px;
+        border-right: 1px solid #ffffff80;
+
+        &:last-child {
+          border-right: 0 solid #ffffff80;
+          padding-right: 0;
+        }
+
+        .link {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 1.5;
+          text-align: left;
+          letter-spacing: 0;
+          color: #fff;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          margin: 0;
+
+          .icon-span {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 8px 0 0;
+          }
+
+          .material-icons {
+            font-size: 21px;
+          }
+        }
+      }
+    }
+  }
+
+  .header-div.header-bgcolor .top-nav {
+    transform: translateY(-100px);
+    position: absolute;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1450px) {
@@ -757,6 +840,31 @@ header {
         animation: none;
       }
     }
+  }
+
+  header .top-nav {
+    padding: 0;
+  }
+
+  header .top-nav .social-list-top-root .social-list-top li {
+    margin: 0 5px 0 0;
+  }
+
+  header .top-nav .social-list-top-root .social-list-top li a {
+    height: 30px;
+    width: 30px;
+  }
+
+  header .top-nav .navbar-info-top li .link .txt {
+    display: none;
+  }
+
+  header .top-nav .navbar-info-top li .link .icon-span {
+    margin: 0;
+  }
+
+  header .top-nav .navbar-info-top li {
+    padding: 0 15px 0 15px;
   }
 }
 
