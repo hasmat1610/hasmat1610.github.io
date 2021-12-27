@@ -285,7 +285,9 @@ header {
     .row-nav-div {
       display: flex;
       flex-wrap: wrap;
+      justify-content: flex-end;
       align-items: center;
+      width: 100%;
 
       .search-nav-div {
         flex: 1;
@@ -599,6 +601,46 @@ header {
   .header-div.header-bgcolor .top-nav {
     transform: translateY(-100px);
     position: absolute;
+  }
+}
+
+@media (min-width: 1025px) {
+  header {
+    .header-div.header-02 {
+      .header-container {
+        .logo-div {
+          order: 2;
+        }
+
+        .nav-right-div {
+          order: 1;
+        }
+      }
+
+      .top-nav1 {
+        justify-content: flex-start;
+      }
+
+      .nav-div {
+        padding: 0 50px 0 0;
+      }
+
+      .row-nav-div {
+        justify-content: flex-start;
+      }
+
+      .ullist-inline li {
+        &:last-child {
+          order: 1 !important;
+        }
+
+        @for $i from 1 through 10 {
+          &:nth-child(#{$i}) {
+            order: $i + 1;
+          }
+        }
+      }
+    }
   }
 }
 

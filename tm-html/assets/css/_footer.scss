@@ -166,3 +166,60 @@
     }
   }
 }
+
+.footer-02 {
+  .footer-div {
+    padding: 60px 0 30px;
+    background-color: #4731a0;
+    background-image: url(../images/pattern-2.png) !important;
+    background-size: cover;
+    background-position: top center;
+
+    .footer-row-div {
+      padding: 0;
+      border-radius: 0;
+      background: inherit;
+    }
+
+    .footer-card {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .social-dv {
+        order: 3;
+        margin: 15px 0 0;
+      }
+
+      .es-box-div {
+        order: 2;
+      }
+
+      .footer-logo-div {
+        order: 1;
+        font-weight: 800;
+        font-size: 42px;
+        line-height: 1.5;
+        letter-spacing: 4px;
+        text-align: left;
+        text-transform: uppercase;
+        color: var(--primary-colour01);
+      }
+
+      .es-box-div .e-div .icon-span .icon,
+      .es-box-div .e-div,
+      .footer-desc-div ul li,
+      .footer-desc-div p {
+        color: #fff;
+      }
+
+      h4 {
+        color: var(--primary-colour01);
+      }
+    }
+  }
+
+  .footer-bottom-div {
+    background: #02b3e4;
+  }
+}

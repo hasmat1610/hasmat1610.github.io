@@ -675,6 +675,22 @@
   }
 }
 
+@media (min-width: 1025px) {
+  .about-us-section.about-swap02 {
+    .about-left {
+      order: 2;
+    }
+  
+    .about-right {
+      order: 1;
+    }
+
+    .img-div {
+      padding: 0 20px 0 0;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .banner-slider-section .banner-wrapper-dv .banner-content-dv {
     padding: 80px 0;
