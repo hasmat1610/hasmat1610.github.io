@@ -604,6 +604,35 @@ header {
   }
 }
 
+header.header-main {
+  .header-div {
+    .nav-list-div {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .ullist-inline {
+      li {
+        .nav-link.btn.btn-cst {
+          height: 40px;
+          font-size: 16px;
+          letter-spacing: 0.2px;
+          font-weight: 600;
+          color: #fff;
+          min-height: auto;
+          min-width: 110px;
+          text-align: center;
+          justify-content: center;
+        }
+
+        &.btn-li {
+          padding-left: 14px;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 1025px) {
   header {
     .header-div.header-02 {
