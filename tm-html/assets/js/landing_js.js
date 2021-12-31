@@ -30,3 +30,66 @@ $(document).ready(function () {
     }
   });
 });
+
+var swiper = new Swiper(".banner-swiper-slider", {
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    calculateHeight: true,
+  },
+});
+
+var swiper02 = new Swiper(".blog-grid-swiper-slider", {
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    calculateHeight: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
+
+var swiper03 = new Swiper(".testimonial-swiper-slider", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    calculateHeight: true,
+  },
+});
+
+/* Pricing */
+
+$(".pricing-grid-section").each(function (i, container) {
+  var $container = $(container);
+  $container.find(".pricing-switcher").on("click", function () {
+    $container.find(".pricing-switcher").toggleClass("pricing-switcher-active");
+    $container.find(".price").removeClass("price-hidden");
+    $container.find(".price").toggleClass("price-show price-hide");
+  });
+});
+
+/* End of Pricing */
