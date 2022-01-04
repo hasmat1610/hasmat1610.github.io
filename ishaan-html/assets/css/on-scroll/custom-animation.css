@@ -1,0 +1,78 @@
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.bg-image-none {
+  background-image: none;
+}
+
+.bg-before-image-none::before {
+  background-image: none;
+}
+
+header .header-div .right-side .nav.opacityon li {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.custom-animation-before-01::before {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.custom-animation-before-02::before {
+  opacity: 0;
+}
+
+.custom-animation-before-02.aos-animate::before {
+  opacity: 1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+}
+
+.custom-animation-before-03::before {
+  opacity: 0;
+}
+
+.custom-animation-before-03.aos-animate::before {
+  opacity: 1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+}
+
+.custom-animation-before-04::before {
+  opacity: 0;
+}
+
+.custom-animation-before-04.aos-animate::before {
+  opacity: 1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInLeft;
+          animation-name: fadeInLeft;
+}
+/*# sourceMappingURL=custom-animation.css.map */
