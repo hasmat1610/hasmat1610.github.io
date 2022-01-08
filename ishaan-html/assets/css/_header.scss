@@ -169,13 +169,11 @@ header {
           .btn.dropdown-toggle {
             color: var(--primary-colour01);
           }
+        }
 
-          .dropdown-menu {
-            position: absolute;
-            inset: 0px auto auto 0px;
-            margin: 0px;
-            transform: translate(0px, 90px);
-            display: block;
+        &.active {
+          .btn.dropdown-toggle {
+            color: var(--primary-colour01);
           }
         }
       }
@@ -884,6 +882,7 @@ header.header-main {
 
       .ullist-inline li.dropdown-li .btn.dropdown-toggle {
         min-height: 48px;
+        width: 100%;
       }
 
       .ullist-inline li.dropdown-li .dropdown {
@@ -954,6 +953,16 @@ header.header-main {
     justify-content: center;
     flex-wrap: wrap;
     margin: 16px 0 0 0;
+  }
+}
+
+@media (min-width: 1025px) {
+  header .header-div .ullist-inline li.dropdown-li:hover .dropdown-menu {
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    transform: translate(0px, 90px);
+    display: block;
   }
 }
 
