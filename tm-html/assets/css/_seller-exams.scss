@@ -495,6 +495,56 @@ table.dataTable tr.child span.dtr-title {
   min-width: 100px;
 }
 
+@media (min-width: 1025px) and (max-width: 1450px) {
+  .grid-number-root-div .grid-number-bx .grid-link {
+    padding: 20px 16px 16px;
+  }
+
+  .grid-number-root-div .grid-number-bx .text-gd {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1290px) {
+  .grid-number-root-div .grid-number-bx .grid-link {
+    padding: 20px 16px 16px;
+  }
+
+  .grid-number-root-div .grid-number-bx .text-gd {
+    font-size: 14px;
+  }
+
+  .grid-number-root-div .grid-number-bx .icon-span {
+    left: 16px;
+  }
+
+  .wrapper.dashboard-wrapper .middle-area-dashboard {
+    width: calc(100% - 340px);
+    padding: 0 15px 0 0;
+  }
+
+  .main-section .main-div {
+    padding: 0 5px 0;
+  }
+
+  .seller-ex-dv .bd-seller-ex-dv {
+    padding: 0 15px 15px;
+  }
+
+  .middle-area-dashboard .main-middle-area {
+    border-radius: 20px;
+  }
+
+  .main-section.main-active-section {
+    padding-top: 20px;
+  }
+
+  .wrapper.dashboard-wrapper {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+}
+
 @media (max-width: 1024px) {
   .table-div .pagination-sl-dv .show-txt-dv {
     width: 100%;
