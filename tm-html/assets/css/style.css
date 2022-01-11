@@ -10860,6 +10860,108 @@ table.dataTable tr.child span.dtr-title {
   border-left: 2px solid #40aeb4;
 }
 
+@media (max-width: 1023px) {
+  .course-detail-title-div {
+    padding: 60px 0 50px 0;
+  }
+  .course-detail-title-div .breadcrumb li {
+    font-size: 14px;
+  }
+  .course-detail-title-div h2 {
+    font-size: 20px;
+    margin: 0 0 10px;
+  }
+  .course-detail-title-div p {
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
+  .course-detail-section .tab-detail-nav-div .nav.nav-pills .nav-link {
+    margin: 0 0 10px;
+    font-size: 14px;
+    padding: 5px 15px;
+    min-height: 40px;
+  }
+  .course-detail-section .tab-pane-inner {
+    padding: 15px;
+  }
+  .course-detail-section .tab-pane-inner .gnr-conent-dv .list-disc {
+    font-size: 14px;
+  }
+  .course-detail-section .author-box .general-grid-thumb-bx {
+    width: 70px;
+  }
+  .course-detail-section .author-box .general-grid-thumb-bx .img-fluid {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #ebebeb;
+  }
+  .course-detail-section .author-box .box-inner {
+    padding: 0 0 0 5px;
+  }
+  .course-detail-section .author-box .box-inner h4 {
+    font-size: 18px;
+  }
+  .course-detail-section .author-box .box-inner .social-contact-list li a {
+    font-size: 14px;
+    padding: 10px 8px 6px;
+    min-width: 32px;
+  }
+  .course-detail-section .author-box .box-inner .social-contact-list li a i {
+    font-size: 16px;
+  }
+  .course-detail-section .author-box .box-inner p {
+    font-size: 13px;
+  }
+  .course-detail-section
+.review-comment-root
+.review-comment-bx
+.review-img-dv {
+    width: 60px;
+  }
+  .course-detail-section
+.review-comment-root
+.review-comment-bx
+.review-img-dv
+.img-fluid {
+    width: 50px;
+    height: 50px;
+  }
+  .course-detail-section .review-comment-root .review-comment-bx .rating {
+    position: relative;
+  }
+  .course-detail-section .review-comment-root .review-comment-bx .rating .icon {
+    font-size: 18px;
+  }
+  .course-detail-section .review-comment-root .review-comment-bx h4 {
+    font-size: 18px;
+  }
+  .course-detail-section .review-comment-root .review-comment-bx .text-date-sp {
+    font-size: 12px;
+  }
+  .course-detail-section .review-comment-root .review-comment-bx p {
+    margin: 0 0 10px;
+    line-height: 1.5;
+    font-size: 13px;
+  }
+  .course-detail-section .review-comment-root .review-comment-bx {
+    padding: 10px;
+    margin: 0 0 10px;
+  }
+  .course-detail-section
+.review-comment-root
+.review-comment-bx.review-comment-sub-bx {
+    margin: 0 0 10px 10px;
+  }
+  .course-inner-column-dv .btn-box .btn.btn-cst {
+    min-height: 40px;
+    padding: 9px 10px 8px;
+    font-size: 13px;
+  }
+  .course-inner-column-dv .btn-box {
+    padding: 15px 20px 5px;
+  }
+}
+
 @media (min-width: 1025px) {
   /* main right content area */
   .middle-area-dashboard .main-middle-area.active-progress-area {
