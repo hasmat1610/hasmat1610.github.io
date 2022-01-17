@@ -93,3 +93,45 @@ $(".pricing-grid-section").each(function (i, container) {
 });
 
 /* End of Pricing */
+
+document.addEventListener("DOMContentLoaded", function () {
+  var typed3 = new Typed("#typed1", {
+    strings: [
+      "Your <i class='i01'>Knowledge</i> </br> + Our <i class='i02'>Support</i></br> = Revenue Generation",
+      "Your <i>Content</i> </br> + Our <i>Technology</i></br> = Revenue Generation",
+    ],
+    typeSpeed: 50,
+    backDelay: 900,
+    backSpeed: 20,
+    smartBackspace: true,
+    loop: true,
+  });
+});
+
+// if ($(".text-slider").length == 1) {
+//   var typed_strings = $(".text-slider-items").text();
+
+//   var typed = new Typed(".text-slider", {
+//     strings: typed_strings.split(", "),
+//     typeSpeed: 50,
+//     loop: true,
+//     backDelay: 900,
+//     backSpeed: 30,
+//   });
+// }
+
+// function toggleLoop(typed) {
+//    if (typed.loop) {
+//      typed.loop = false;
+//    } else {
+//      typed.loop = true;
+//    }
+//  }
+
+// var typed3 = new Typed('#typed3', {
+//   strings: ['My strings are: <i>strings</i> with', 'My strings are: <strong>HTML</strong>', 'My strings are: Chars &times; &copy;'],
+//   typeSpeed: 0,
+//   backSpeed: 0,
+//   smartBackspace: true, // this is a default
+//   loop: true
+// });
