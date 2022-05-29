@@ -5,7 +5,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>E-Commerce</title>
+  <title>Vendor - E-Commerce</title>
   <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
   <meta name="theme-color" content="#0470ba">
   <meta name="msapplication-navbutton-color" content="#0470ba">
@@ -19,7 +19,7 @@
   <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#list-details-vendor" data-bs-offset="0" class="scrollspy-vendor-ex" tabindex="0">
 
   <div id="wrapper" class="wrapper">
 
@@ -99,93 +99,176 @@
     <!-- Body Section -->
     <div class="main-middle-area">
 
-      <section class="home-banner-section">
-        <div class="banner-img-div">
-          <img src="assets/images/background.png" class="img-fluid img-banner" alt="img" />
-        </div>
-
+      <section class="title-about-pro-section">
         <div class="container">
-          <div class="home-banner-div">
-            <div class="home-banner-inner-div">
-              <h1>Lorem ipsum dolor sit amet</h1>
-              <div class="desc-div">
-                <p>Nunc vitae convallis metus. Pellentesque et facilisis nisi. Vivamus tempor diam magna, nec volutpat nisi
-                  accumsan vitae. Nullam facilisis pharetra laoreet. Aliquam ut ultrices nisl, sit amet interdum quam.
-                  </p>
-              </div>
-              <div class="btn-div">
-                <a href="#" class="btn btn-primary">View More</a>
-              </div>
+          <div class="title-about-pro-div">
+            
+            <h1>Product Name</h1>
+            <h4>About Product</h4>
+            <div class="desc-div">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et enim quam. Sed fermentum orci non aliquam tristique. Pellentesque massa metus, convallis sed semper vitae, finibus nec lectus. Pellentesque vel purus rhoncus, venenatis est nec, tempor erat. Curabitur feugiat purus vitae ornare porta. </p>
             </div>
+            
           </div>
         </div>
       </section>
 
-      <section class="eco-category-home-section">
+      <section class="main-product-section">
         <div class="container">
-          <div class="eco-category-home-div">
-
-            <div class="row">
-
-              <div class="col-lg-3 col-md-6">
-                <div class="eco-category-hm-card">
-                  <a href="#" class="eco-service-inner-card-bx">
-                    <div class="image-div">
-                      <img src="assets/images/img-01.jpg" class="img-fluid" alt="category" />
-                    </div>
-                    <div class="text-div">
-                      <h4>Category Title</h4>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="col-lg-3 col-md-6">
-                <div class="eco-category-hm-card">
-                  <a href="#" class="eco-service-inner-card-bx">
-                    <div class="image-div">
-                      <img src="assets/images/img-01.jpg" class="img-fluid" alt="category" />
-                    </div>
-                    <div class="text-div">
-                      <h4>Category Title</h4>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6">
-                <div class="eco-category-hm-card">
-                  <a href="#" class="eco-service-inner-card-bx">
-                    <div class="image-div">
-                      <img src="assets/images/img-01.jpg" class="img-fluid" alt="category" />
-                    </div>
-                    <div class="text-div">
-                      <h4>Category Title</h4>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6">
-                <div class="eco-category-hm-card">
-                  <a href="#" class="eco-service-inner-card-bx">
-                    <div class="image-div">
-                      <img src="assets/images/img-01.jpg" class="img-fluid" alt="category" />
-                    </div>
-                    <div class="text-div">
-                      <h4>Category Title</h4>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="btn-dv">
-              <a href="#" class="btn btn-primary"> View More Category </a>
-            </div>
           
+          <div class="filter-div form-div">
+            <div class="row">
+              <div class="col-lg-3 col-md-3">
+                <div class="form-group">
+                  <label class="form-label">Price amount</label>
+                  <input type="text" class="form-control" placeholder="Enter amount" />
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-3">
+                <div class="form-group">
+                  <label class="form-label">Your Region</label>
+                  <input type="text" class="form-control" placeholder="Enter zip, city or state" />
+                  <div class="valid-div valid-feedback"> <i>Nationwide Only</i> </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-3">
+                <div class="form-group">
+                  <label class="form-label">Availability</label>
+                  <select class="form-select" aria-label="Availability">
+                    <option selected disabled>Select availability</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-3">
+                <div class="form-group">
+                  <label class="form-label">Tax Credit</label>
+                  <select class="form-select" aria-label="Tax Credit">
+                    <option selected disabled>Select tax credit</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                  </select>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <div class="product-list-div">
+
+            <div class="product-header-div form-div">
+              <div class="product-header-left">
+                <h2>Product List <span class="txt-result">(220 Results)</span> </h2>
+              </div>
+              <div class="product-header-right">
+                <div class="form-group">
+                  <label class="form-label">Sort By</label>
+                  <select class="form-select" aria-label="Availability">
+                    <option selected disabled>Default</option>
+                    <option value="1">High</option>
+                    <option value="2">Low</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-list-body-div">
+
+              <div class="pro-dt-top-rs-dv">
+                <h3>1 Sponsored Result</h3>
+              </div>
+
+              <div class="pro-dt-list-rs-dv">
+                <div class="pro-dt-list-rs-row">
+                  <div class="vd-logo-div">
+                    <a href="#" class="vd-logo-link"> <img src="assets/images/img-01.jpg" class="img-fluid" alt="vendor" /> </a>
+                  </div>
+                  <div class="vd-txt-dv"> 
+                    <div class="w-100">
+                      <h2>Vendor Details</h2> 
+                      <p> 100 pc sold </p> 
+                    </div>
+                  </div>
+                  <div class="vd-btn-div">
+                    <a href="#" class="btn btn-primary btn-learn-more">Learn More</a>
+                    <p> <i> At the vendor website</i></p>
+                    <div class="blk-rw-dv">
+                      <a href="#" class="link view-details">View Details</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pro-dt-list-rs-row">
+                  <div class="vd-logo-div">
+                    <a href="#" class="vd-logo-link"> <img src="assets/images/img-01.jpg" class="img-fluid" alt="vendor" /> </a>
+                  </div>
+                  <div class="vd-txt-dv">
+                    <div class="w-100">
+                      <h2>Vendor Details</h2> 
+                      <p> 100 pc sold </p> 
+                    </div>
+                  </div>
+                  <div class="vd-btn-div">
+                    <a href="#" class="btn btn-primary btn-learn-more">Learn More</a>
+                    <p> <i> At the vendor website</i></p>
+                    <div class="blk-rw-dv">
+                      <a href="#" class="link view-details">View Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pro-dt-top-rs-dv">
+                <h3>All Result</h3>
+              </div>
+
+              <div class="pro-dt-list-rs-dv">
+                <div class="pro-dt-list-rs-row">
+                  <div class="vd-logo-div">
+                    <a href="#" class="vd-logo-link"> <img src="assets/images/img-01.jpg" class="img-fluid" alt="vendor" /> </a>
+                  </div>
+                  <div class="vd-txt-dv"> 
+                    <div class="w-100">
+                      <h2>Vendor Details</h2> 
+                      <p> 100 pc sold </p> 
+                    </div>
+                  </div>
+                  <div class="vd-btn-div">
+                    <a href="#" class="btn btn-primary btn-learn-more">Learn More</a>
+                    <p> <i> At the vendor website</i></p>
+                    <div class="blk-rw-dv">
+                      <a href="#" class="link view-details">View Details</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pro-dt-list-rs-row">
+                  <div class="vd-logo-div">
+                    <a href="#" class="vd-logo-link"> <img src="assets/images/img-01.jpg" class="img-fluid" alt="vendor" /> </a>
+                  </div>
+                  <div class="vd-txt-dv">
+                    <div class="w-100">
+                      <h2>Vendor Details</h2> 
+                      <p> 100 pc sold </p> 
+                    </div>
+                  </div>
+                  <div class="vd-btn-div">
+                    <a href="#" class="btn btn-primary btn-learn-more">Learn More</a>
+                    <p> <i> At the vendor website</i></p>
+                    <div class="blk-rw-dv">
+                      <a href="#" class="link view-details">View Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </section>
 

@@ -1,0 +1,163 @@
+.title-about-pro-section {
+  padding: 40px 0;
+  margin: 0;
+  position: relative;
+  background: #d9d9d9;
+
+  .title-about-pro-div {
+    width: 100%;
+  }
+
+  h1 {
+    font-weight: 600;
+    margin: 0 0 10px;
+    display: block;
+  }
+
+  h4 {
+    font-size: 21px;
+    line-height: 1.5;
+    display: block;
+    margin: 0 0 4px;
+  }
+}
+
+.filter-div {
+  padding: 30px 0 10px;
+  position: relative;
+}
+
+.product-header-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  margin: 0 0 15px;
+  padding: 0 0 15px;
+  border-bottom: 1px solid #d9d9d987;
+
+  h2 {
+    font-weight: 600;
+
+    .txt-result {
+      color: #1f548a;
+      font-size: 18px;
+      margin: 0 0 0 2px;
+    }
+  }
+
+  .form-group {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .form-label {
+      flex: 1;
+      margin: 0;
+    }
+
+    .form-select {
+      flex: 1;
+      margin: 0 0 0 10px;
+      min-width: 130px;
+    }
+  }
+}
+
+.pro-dt-top-rs-dv {
+  padding: 0;
+  position: relative;
+
+  h3 {
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: var(--primaryColor01);
+    letter-spacing: -0.2px;
+    font-family: var(--PoppinsFont);
+  }
+}
+
+.product-list-div {
+  padding: 0 0 30px;
+}
+
+.pro-dt-list-rs-dv {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  .pro-dt-list-rs-row {
+    padding: 20px 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top: 1px solid #ddd;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    .vd-logo-div {
+      width: 150px;
+
+      .vd-logo-link {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .img-fluid {
+        height: 110px;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+
+    .vd-txt-dv {
+      padding: 0 0 0 15px;
+      flex: 1;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      h2 {
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 1.5;
+        display: block;
+        margin: 0 0 4px;
+      }
+    }
+
+    .vd-btn-div {
+      text-align: center;
+      position: relative;
+
+      .btn.btn-learn-more {
+        margin: 0;
+        min-width: 180px;
+      }
+
+      .view-details {
+        font-size: 16px;
+        line-height: 1.5;
+        display: inline-block;
+        color: var(--primaryColor02);
+        font-weight: 500;
+        transition: all 0.8s;
+
+        &:hover {
+          color: var(--primaryColor01);
+        }
+      }
+
+      .blk-rw-dv {
+        margin: 6px auto 0;
+      }
+    }
+  }
+}

@@ -517,7 +517,7 @@
     border-bottom: 1px solid var(--greyColor07);
 
     h2 {
-      color: var(--blackColor03);
+      color: var(--blackColor02);
       text-align: center;
       font-size: 30px;
       line-height: 1.4;
@@ -558,7 +558,7 @@
     margin: 0 0 30px;
 
     h2 {
-      color: var(--blackColor03);
+      color: var(--blackColor02);
       text-align: left;
       font-size: 30px;
       line-height: 1.4;
@@ -584,7 +584,7 @@
     .link.link-forgot {
       font-size: 14px;
       line-height: 1.5;
-      color: var(--blackColor03);
+      color: var(--blackColor02);
       font-weight: 700;
       font-family: var(--PoppinsFont);
       transition: all 0.8s;
@@ -972,7 +972,7 @@
       padding: 0 0 10px;
       line-height: 1.5;
       margin: 0 0 20px;
-      color: var(--blackColor03);
+      color: var(--blackColor02);
       letter-spacing: 0;
       font-family: var(--PoppinsFont);
       border-bottom: 1px solid var(--textColor04);
@@ -1168,7 +1168,7 @@
         font-weight: 600;
         font-size: 14px;
         line-height: 1.5;
-        color: var(--blackColor03);
+        color: var(--blackColor02);
         letter-spacing: 0;
         padding: 4px 0 3px;
         flex: 1;
@@ -1321,7 +1321,7 @@
     p {
       font-size: 14px;
       font-weight: 600;
-      color: var(--blackColor03);
+      color: var(--blackColor02);
       font-family: var(--PoppinsFont);
       margin: 0;
 
@@ -1381,7 +1381,7 @@
 
 .signature-dv {
   p {
-    color: var(--blackColor03);
+    color: var(--blackColor02);
     font-weight: 500;
     margin: 0 0 10px;
   }
@@ -1415,7 +1415,7 @@
       min-height: 48px;
 
       p {
-        color: var(--blackColor03);
+        color: var(--blackColor02);
         margin: 0;
         font-weight: 500;
         line-height: 1.4;
@@ -1445,7 +1445,7 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--blackColor03);
+    color: var(--blackColor02);
     letter-spacing: 0;
     font-family: var(--PoppinsFont);
     padding: 1px 0 0;
@@ -1457,12 +1457,12 @@
   margin: 0 0 20px;
 
   .accordion-button:not(.collapsed) {
-    color: var(--blackColor03);
+    color: var(--blackColor02);
     background-color: var(--lightBlueColor06);
   }
 
   .accordion-button {
-    color: var(--blackColor03);
+    color: var(--blackColor02);
     padding: 20px 20px 17px;
     min-height: var(--btn-height-60);
     font-weight: 500;
@@ -1493,7 +1493,7 @@
 
     p {
       margin: 0 0 10px;
-      color: var(--blackColor03);
+      color: var(--blackColor02);
       font-size: 14px;
       line-height: 1.8;
     }

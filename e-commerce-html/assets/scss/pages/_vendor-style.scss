@@ -1,0 +1,498 @@
+.title-header-section {
+  padding: 20px 0;
+  margin: 0;
+  position: relative;
+  background: #d9d9d9;
+
+  .title-header-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 140px;
+  }
+
+  .title-dv {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .vendor-logo-dv {
+      width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        object-fit: contain;
+        width: 100%;
+        height: 60px;
+      }
+    }
+
+    .vendor-txts-dv {
+      flex: 1;
+      padding: 0 0 0 15px;
+
+      h2 {
+        font-weight: 600;
+      }
+
+      p {
+        b {
+          color: var(--blackColor02);
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .btn.btn-notification {
+    min-width: 50px;
+    padding: 5px 5px 4px;
+    font-size: 21px;
+  }
+
+  .notification-btn-dv {
+    flex: 1;
+    display: inline-flex;
+    justify-content: flex-end;
+  }
+}
+
+.main-vandor-section {
+  padding: 60px 0;
+  margin: 0;
+  position: relative;
+}
+
+.pro-graph-card {
+  padding: 0;
+  position: relative;
+
+  .percent {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    svg {
+      position: relative;
+      width: 210px;
+      height: 210px;
+      transform: rotate(-90deg);
+
+      circle {
+        width: 100%;
+        height: 100%;
+        fill: none;
+        stroke: #f0f0f0;
+        stroke-width: 10;
+        stroke-linecap: round;
+
+        &:last-of-type {
+          stroke-dasharray: 625px;
+          stroke-dashoffset: calc(625px - (625px * var(--percent)) / 100);
+          stroke: #3498db;
+        }
+      }
+    }
+
+    .number {
+      position: absolute;
+
+      h3 {
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 1.3;
+
+        span {
+          font-size: 2rem;
+        }
+      }
+
+      h2 {
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 1.3;
+
+        span {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  &.pro-graph-card01 svg circle:last-of-type {
+    stroke: #f39c12;
+  }
+
+  &.pro-graph-card02 svg circle:last-of-type {
+    stroke: #2ecc71;
+  }
+
+  &.pro-graph-card03 svg circle:last-of-type {
+    stroke: #1fa457;
+  }
+
+  .link-btn-div {
+    padding: 15px 10px 0;
+    text-align: center;
+
+    .link {
+      color: var(--primaryColor01);
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: 600;
+      display: inline-block;
+      transition: all 0.8s;
+
+      &:hover {
+        color: var(--primaryColor02);
+      }
+    }
+  }
+
+  .title-tp-div {
+    padding: 0;
+    margin: 0 0 20px;
+    position: relative;
+
+    h2 {
+      font-weight: 600;
+      font-size: 21px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .ic {
+        margin: 0 10px 0 0;
+        color: #1f548a80;
+      }
+    }
+  }
+}
+
+.vendor-dash-graph-div {
+  padding: 0;
+  margin: 0 0 40px;
+  position: relative;
+
+  .gd-4 {
+    border-right: 1px solid #ddd;
+    border-left: 1px solid transparent;
+
+    &:last-child {
+      border-right-color: transparent;
+    }
+  }
+}
+
+body {
+  position: relative;
+}
+
+.vendor-details-div {
+  position: relative;
+
+  .list-group {
+    position: sticky;
+    top: 91px;
+    flex-direction: unset;
+    border-radius: 0;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    z-index: 3;
+    margin: 0;
+
+    .list-group-item {
+      width: auto;
+      padding: 10px 15px;
+      border: none;
+      font-size: 16px;
+      line-height: 1.5;
+      display: inline-block;
+      border-radius: 0;
+      margin: 0;
+
+      &.active {
+        background-color: var(--primaryColor02);
+      }
+    }
+  }
+
+  .backtotop-vendor {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 5px 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1f548a;
+    padding: 0 15px;
+    height: 34px;
+    background: #fafafa;
+    border: 1px solid #d9d9d9;
+
+    i {
+      position: relative;
+      margin: -1px 5px 0 0;
+      font-size: 18px;
+    }
+  }
+}
+
+.scrollspy-vendor-ex {
+  position: relative;
+}
+
+.list-item-body {
+  padding: 30px 0 0;
+  position: relative;
+
+  .title-h3 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #d9d9d987;
+    margin: 0 0 15px;
+    padding: 0 0 10px;
+    color: #1f548a;
+
+    i {
+      margin: -1px 10px 0 0;
+      position: relative;
+    }
+  }
+
+  .desc-div {
+    p {
+      font-weight: 400;
+    }
+  }
+
+  .desc-read-div {
+    .btn.btn-read {
+      padding: 0;
+      display: inline-flex;
+      flex-wrap: wrap;
+      border: none;
+      position: relative;
+      top: -2px;
+      color: #1565b5;
+
+      .span-more {
+        display: none;
+      }
+
+      .span-less {
+        display: inline;
+      }
+
+      &.collapsed {
+        .span-more {
+          display: inline;
+        }
+
+        .span-less {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .user-reviews-row {
+    margin-top: 20px;
+  }
+}
+
+.ur-rsting-card {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  .ur-rsting-rw {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 0 10px;
+
+    .progress {
+      flex: 1;
+      margin: 0 15px 0;
+      border-radius: 0;
+
+      .progress-bar {
+        background-color: #dada10;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 16px;
+      color: #333;
+      min-width: 45px;
+    }
+
+    .txt-num {
+      min-width: 80px;
+      font-size: 14px;
+      line-height: 16px;
+      color: #33333380;
+    }
+  }
+}
+
+.write-reviews-card-div {
+  padding: 15px 20px 20px;
+  margin: 0;
+  position: relative;
+  background: #e9ecef;
+
+  h3 {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 0 3px;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 0 0 14px;
+  }
+
+  .btn.btn-view-more {
+    font-size: 14px;
+    padding: 5px 15px 4px;
+    height: 36px;
+    background-color: #dada10;
+    border: 1px solid #e0e00d;
+
+    &:hover {
+      background-color: #c9c912;
+      border: 1px solid #c9c912;
+    }
+  }
+}
+
+.location-div {
+  .map-div {
+    padding: 15px 0 0;
+  }
+
+  .map-iframe {
+    width: 100%;
+    border: none;
+    height: 400px;
+  }
+}
+
+.usr-rv-rates-div {
+  position: relative;
+
+  .usr-rv-rates-row {
+    position: relative;
+    padding: 20px 0;
+    margin: 0;
+    border-top: 1px solid #ddd;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  .usr-rv-rates-top-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 10px;
+
+    .img-dv {
+      width: 50px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 100px;
+        object-fit: cover;
+      }
+    }
+
+    .usr-txt-div {
+      flex: 1;
+      padding: 0 0 0 15px;
+
+      h3 {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 1.5;
+      }
+    }
+  }
+
+  .usr-rv-rates-body-row {
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+.todays-deals-div {
+  padding: 0;
+  margin: 0;
+  position: sticky;
+  top: 100px;
+
+  .todays-deals-header {
+    border-bottom: 1px solid #d9d9d987;
+    margin: 0 0 15px;
+    padding: 0 0 10px;
+
+    h2 {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      font-weight: 500;
+      font-size: 21px;
+      line-height: 1.5;
+      color: #1f548a;
+
+      i {
+        margin: 0 8px 0 0;
+      }
+    }
+  }
+
+  .eco-category-hm-card {
+    margin: 0 0 10px;
+
+    .eco-service-inner-card-bx .image-div {
+      height: 160px;
+    }
+  }
+}
+
+.form-notification-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px 0 0;
+
+  .form-group-radio-btn.mr-2 {
+    margin-right: 16px;
+  }
+}

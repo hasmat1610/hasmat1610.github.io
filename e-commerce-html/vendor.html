@@ -5,7 +5,7 @@
   <meta name="description" content="" />
   <meta name="author" content="" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>E-Commerce</title>
+  <title>Vendor - E-Commerce</title>
   <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
   <meta name="theme-color" content="#0470ba">
   <meta name="msapplication-navbutton-color" content="#0470ba">
@@ -19,7 +19,7 @@
   <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#list-details-vendor" data-bs-offset="0" class="scrollspy-vendor-ex" tabindex="0">
 
   <div id="wrapper" class="wrapper">
 
@@ -99,92 +99,293 @@
     <!-- Body Section -->
     <div class="main-middle-area">
 
-      <section class="home-banner-section">
-        <div class="banner-img-div">
-          <img src="assets/images/background.png" class="img-fluid img-banner" alt="img" />
-        </div>
-
+      <section class="title-header-section">
         <div class="container">
-          <div class="home-banner-div">
-            <div class="home-banner-inner-div">
-              <h1>Lorem ipsum dolor sit amet</h1>
-              <div class="desc-div">
-                <p>Nunc vitae convallis metus. Pellentesque et facilisis nisi. Vivamus tempor diam magna, nec volutpat nisi
-                  accumsan vitae. Nullam facilisis pharetra laoreet. Aliquam ut ultrices nisl, sit amet interdum quam.
-                  </p>
-              </div>
-              <div class="btn-div">
-                <a href="#" class="btn btn-primary">View More</a>
+          <div class="title-header-div">
+            
+            <div class="title-dv">
+              <div class="vendor-logo-dv"> <img src="assets/images/Flipkart-logo.png" class="img-fluid" alt="logo" /> </div>
+              <div class="vendor-txts-dv"> 
+                <h2>Vendor Name</h2> 
+                <p> <b>Location:</b> <span class="txt">Ahmedabad</span> </p> 
               </div>
             </div>
+
+            <div class="notification-btn-dv">
+              <a href="#" class="btn btn-primary btn-notification" data-bs-toggle="modal" data-bs-target="#notificationModal"> <i class="fe fe-bell"></i> </a>
+            </div>
+
           </div>
         </div>
       </section>
 
-      <section class="eco-category-home-section">
+      <section class="main-vandor-section">
         <div class="container">
-          <div class="eco-category-home-div">
+          <div class="row">
 
-            <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-12 vandor-left-col">
 
-              <div class="col-lg-3 col-md-6">
-                <div class="eco-category-hm-card">
-                  <a href="3" class="eco-service-inner-card-bx">
-                    <div class="image-div">
-                      <img src="assets/images/img-01.jpg" class="img-fluid" alt="category" />
+              <div class="vendor-left-inner-div">
+
+                <div class="vendor-dash-graph-div">
+                  <div class="row">
+
+                    <div class="col-lg-4 col-md-4 gd-4">
+                      <div class="pro-graph-card pro-graph-card01">
+                        <div class="title-tp-div">
+                          <h2> <i class="fe fe-user ic"></i> User Rating</h2>
+                        </div>
+                        <div class="percent">
+                          <svg>
+                            <circle cx="105" cy="105" r="100"></circle>
+                            <circle cx="105" cy="105" r="100" style="--percent: 80"></circle>
+                          </svg>
+                          <div class="number">
+                            <h3>4</h3>
+                            <p>Out of 5</p>
+                          </div>
+                        </div>
+                        <div class="link-btn-div">
+                          <a href="#" class="link">787 Reviews</a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="text-div">
-                      <h4>Category Title</h4>
+
+                    <div class="col-lg-4 col-md-4 gd-4">
+                      <div class="pro-graph-card pro-graph-card02">
+                        <div class="title-tp-div">
+                          <h2> <i class="fe fe-trending-up ic"></i> Top Products</h2>
+                        </div>
+                        <div class="percent">
+                          <svg>
+                            <circle cx="105" cy="105" r="100"></circle>
+                            <circle cx="105" cy="105" r="100" style="--percent: 90"></circle>
+                          </svg>
+                          <div class="number">
+                            <h3>2.00%</h3>
+                            <p>Nat'l Avg. 0.63%</p>
+                          </div>
+                        </div>
+                        <div class="link-btn-div">
+                          <a href="#" class="link">See All Rates</a>
+                        </div>
+                      </div>
                     </div>
-                  </a>
+
+                    <div class="col-lg-4 col-md-4 gd-4">
+                      <div class="pro-graph-card pro-graph-card03">
+                        <div class="title-tp-div">
+                          <h2> <i class="fe fe-plus-square ic"></i> Helth Rating</h2>
+                        </div>
+                        <div class="percent">
+                          <svg>
+                            <circle cx="105" cy="105" r="100"></circle>
+                            <circle cx="105" cy="105" r="100" style="--percent: 90"></circle>
+                          </svg>
+                          <div class="number">
+                            <h2>A</h2>
+                          </div>
+                        </div>
+                        <div class="link-btn-div">
+                          <a href="#" class="link">View Report</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
+
+                <div class="vendor-details-div" id="vendor-details-div">
+                  <div id="list-details-vendor" class="list-group">
+                    <a class="list-group-item list-group-item-action active" href="#list-item-vendor1"> About Vendor </a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-vendor2"> User Rating </a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-vendor3"> Rates </a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-vendor4"> Locations </a>
+
+                    <a href="#vendor-details-div" class="backtotop-vendor"> <i class="fe fe-arrow-up"></i> <span class="txt">Back to top</span> </a>
+                  </div>
+
+                  <div>
+                    <div id="list-item-vendor1" class="list-item-body">
+                      <h3 class="title-h3"> <i class="fe fe-home"></i> About Vendor</h3>
+
+                      <div class="desc-div desc-read-div">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et enim quam. Sed fermentum orci non aliquam tristique. Pellentesque massa metus, convallis sed semper vitae, finibus nec lectus. Pellentesque vel purus rhoncus, venenatis est nec, tempor erat. Curabitur feugiat purus vitae ornare porta. Maecenas ut efficitur urna. Proin nisi lorem, imperdiet vitae tempus quis, bibendum eget enim. Nulla ut ante at libero molestie pulvinar eu eget enim. Morbi suscipit vehicula tincidunt. Aliquam vitae neque eu orci aliquet porttitor <br>
+                          Nunc in turpis at velit lobortis faucibus. Nullam sed cursus turpis. Maecenas tristique feugiat est, nec consectetur est lacinia quis. Proin urna felis, dictum at rutrum non, mollis ac orci. Ut enim nulla, rhoncus in feugiat in, rhoncus non sem. Mauris finibus mauris sit amet tempus consectetur.
+                          <span class="txt collapse" id="collapseReadMore">
+                            Etiam ex dui, tincidunt et dui sed, placerat viverra augue. Pellentesque mattis eros vitae sapien suscipit rutrum. Maecenas efficitur consequat felis, a elementum neque consectetur et. Mauris quis erat lectus. Maecenas tristique eros non laoreet pretium.
+                          </span>
+                          <button class="btn btn-read collapsed btn-more" type="button" data-bs-toggle="collapse" data-bs-target="#collapseReadMore" aria-expanded="false" aria-controls="collapseReadMore">Read&nbsp;<span class="span span-more">more</span><span class="span span-less">less</span></button>
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div id="list-item-vendor2" class="list-item-body">
+                      <h3 class="title-h3"> <i class="fe fe-user"></i> User Reviews <small class="number-txt">(500)</small> </h3>
+
+                      <div class="row user-reviews-row">
+                        <div class="col-lg-6 col-md-6 user-reviews-left">
+
+                          <div class="ur-rsting-card">
+                            
+                            <div class="ur-rsting-rw">
+                              <p>5 Star</p>
+                              <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <span class="txt-num">250</span>
+                            </div>
+
+                            <div class="ur-rsting-rw">
+                              <p>4 Star</p>
+                              <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <span class="txt-num">150</span>
+                            </div>
+
+                            <div class="ur-rsting-rw">
+                              <p>3 Star</p>
+                              <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <span class="txt-num">100</span>
+                            </div>
+
+                            <div class="ur-rsting-rw">
+                              <p>2 Star</p>
+                              <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <span class="txt-num">50</span>
+                            </div>
+
+                            <div class="ur-rsting-rw">
+                              <p>1 Star</p>
+                              <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                              <span class="txt-num">50</span>
+                            </div>
+                            
+                          </div>
+
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 user-reviews-right">
+
+                          <div class="write-reviews-card-div">
+                            <h3>Have you Bought from this Vendor?</h3>
+                            <p>Tell us something about it and help others make the right decision</p>
+                            <div class="btn-div">
+                              <a href="#" class="btn btn-primary btn-view-more">View More</a>                            
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="list-item-vendor3" class="list-item-body">
+                      <h3 class="title-h3"> <i class="fe fe-star"></i> Rates </h3>
+
+                      <div class="usr-rv-rates-div">
+                        <div class="usr-rv-rates-row">
+                          <div class="usr-rv-rates-top-row">
+                            <div class="img-dv"> <img src="assets/images/img-01.jpg" class="img-fluid" alt="user" /> </div>
+                              <div class="usr-txt-div">
+                                <h3>Peter Minter</h3>
+                                <p>2 days ago</p>
+                              </div>
+                          </div>
+                          <div class="usr-rv-rates-body-row">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut animi sapiente libero perferendis quis exercitationem quasi porro! Quam, magni autem.</p>
+                          </div>
+                        </div>
+
+                        <div class="usr-rv-rates-row">
+                          <div class="usr-rv-rates-top-row">
+                            <div class="img-dv"> <img src="assets/images/img-01.jpg" class="img-fluid" alt="user" /> </div>
+                              <div class="usr-txt-div">
+                                <h3>Peter Minter</h3>
+                                <p>2 days ago</p>
+                              </div>
+                          </div>
+                          <div class="usr-rv-rates-body-row">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut animi sapiente libero perferendis quis exercitationem quasi porro! Quam, magni autem.</p>
+                          </div>
+                        </div>
+
+                        <div class="usr-rv-rates-row">
+                          <div class="usr-rv-rates-top-row">
+                            <div class="img-dv"> <img src="assets/images/img-01.jpg" class="img-fluid" alt="user" /> </div>
+                              <div class="usr-txt-div">
+                                <h3>Peter Minter</h3>
+                                <p>2 days ago</p>
+                              </div>
+                          </div>
+                          <div class="usr-rv-rates-body-row">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut animi sapiente libero perferendis quis exercitationem quasi porro! Quam, magni autem.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="list-item-vendor4" class="list-item-body">
+                      <h3 class="title-h3"> <i class="fe fe-map-pin"></i> Locations </h3>
+
+                      <div class="location-div">
+                        <p>15, Ajanta Park Society, Hindu Colony, Navrangpura, Ahmedabad, Gujarat 380009</p>
+                        <div class="map-div">
+                          <iframe class="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29374.62668344218!2d72.55208415867732!3d23.03007441020894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84f53fffffff%3A0xa28e8c945e6ed037!2sincome%20tax%20and%20investment%20consultancy!5e0!3m2!1sen!2sin!4v1653827611830!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
               </div>
 
-
-              <div class="col-lg-3 col-md-6">
-                <div class="eco-category-hm-card">
-                  <a href="#" class="eco-service-inner-card-bx">
-                    <div class="image-div">
-                      <img src="assets/images/img-01.jpg" class="img-fluid" alt="category" />
-                    </div>
-                    <div class="text-div">
-                      <h4>Category Title</h4>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6">
-                <div class="eco-category-hm-card">
-                  <a href="#" class="eco-service-inner-card-bx">
-                    <div class="image-div">
-                      <img src="assets/images/img-01.jpg" class="img-fluid" alt="category" />
-                    </div>
-                    <div class="text-div">
-                      <h4>Category Title</h4>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6">
-                <div class="eco-category-hm-card">
-                  <a href="#" class="eco-service-inner-card-bx">
-                    <div class="image-div">
-                      <img src="assets/images/img-01.jpg" class="img-fluid" alt="category" />
-                    </div>
-                    <div class="text-div">
-                      <h4>Category Title</h4>
-                    </div>
-                  </a>
-                </div>
-              </div>
             </div>
 
-            <div class="btn-dv">
-              <a href="#" class="btn btn-primary"> View More Category </a>
+            <div class="col-xl-4 col-lg-4 col-md-12 vandor-right-col">
+
+              <div class="todays-deals-div">
+                <div class="todays-deals-header">
+                  <h2> <i class="fe fe-shopping-bag"></i> Todays deals</h2>
+                </div>
+
+                <div class="todays-deals-body">
+                  <div class="eco-category-hm-card">
+                    <a href="#" class="eco-service-inner-card-bx">
+                      <div class="image-div">
+                        <img src="assets/images/img-01.jpg" class="img-fluid" alt="category" />
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="eco-category-hm-card">
+                    <a href="#" class="eco-service-inner-card-bx">
+                      <div class="image-div">
+                        <img src="assets/images/img-01.jpg" class="img-fluid" alt="category" />
+                      </div>
+                    </a>
+                  </div>
+
+                  <div class="eco-category-hm-card">
+                    <a href="#" class="eco-service-inner-card-bx">
+                      <div class="image-div">
+                        <img src="assets/images/img-01.jpg" class="img-fluid" alt="category" />
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
             </div>
-          
+
           </div>
         </div>
       </section>
@@ -192,6 +393,7 @@
     </div>
     <!-- End of Body Section -->
 
+    <!-- Footer Section -->
     <footer>
       <div class="footer-div">
         <div class="container">
@@ -265,8 +467,53 @@
         </div>
       </div>
     </footer>
+    <!-- End of Footer Section -->
 
   </div><!-- end of wrapper -->
+
+  <div class="modal modal-custom modal-notification fade" id="notificationModal" tabindex="-1" aria-labelledby="notificationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="notificationModalLabel">Notification</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fe fe-x"></i></button>
+        </div>
+        <div class="modal-body">
+          
+          <div class="form-div form-notification-div">
+
+            <div class="form-group-radio-btn mr-2">
+              <div class="radio-card">
+                <label class="radio-label">
+                  <input type="radio" name="notification-radio" class="radio-inline" value="All" checked="">
+                  <span class="span-root">
+                    All
+                  </span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group-radio-btn">
+              <div class="radio-card">
+                <label class="radio-label">
+                  <input type="radio" name="notification-radio" class="radio-inline" value="Offer">
+                  <span class="span-root">
+                    Offer
+                  </span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-close-primary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/popper.min.js"></script>
