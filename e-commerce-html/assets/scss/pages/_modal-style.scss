@@ -1,0 +1,85 @@
+.modal-custom {
+  &.request-session-modal {
+    .modal-header {
+      .modal-title {
+        font-size: 24px;
+      }
+    }
+
+    .modal-dialog {
+      max-width: 800px;
+    }
+
+    .form-div {
+      .form-group {
+        .info-dv {
+          p {
+            font-size: 12px;
+            font-family: var(--PoppinsFont);
+            color: var(--textColor03);
+            font-weight: 400;
+            margin: 5px 0 0;
+          }
+        }
+      }
+    }
+
+    .title-h4-dv {
+      h4 {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--blackColor03);
+        letter-spacing: 0;
+        font-family: var(--PoppinsFont);
+        padding: 0 0 10px;
+        margin: 5px 0 5px;
+        display: block;
+
+        .req-span {
+          font-size: 16px;
+          line-height: 0;
+          font-weight: 500;
+          color: #fe0000;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .modal-custom {
+    &.request-session-modal {
+      .modal-header {
+        .modal-title {
+          font-size: 16px;
+        }
+      }
+
+      .title-h4-dv {
+        h4 {
+          font-size: 14px;
+          padding: 0 0 10px;
+          margin: 5px 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .modal-custom {
+    &.request-session-modal {
+      .modal-dialog {
+        max-width: calc(100% - 60px);
+      }
+
+      .modal-header {
+        .modal-title {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1800px) {
+}
+
+@media (max-width: 1450px) {
+}
+
+@media (min-width: 1025px) {
+  body {
+    scrollbar-color: var(--primaryColor02) var(--whiteColor);
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+      border-radius: 0;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: #fafafa;
+      border-radius: 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: var(--primaryColor02);
+      border-radius: 0;
+    }
+  }
+
+  .footer-bottom-div .footer-bottom-inner-div .copyright-div p br {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1450px) {
+}
+
+@media (min-width: 1025px) and (max-width: 1290px) {
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  body.overflow-fixed {
+    overflow-y: hidden;
+  }
+
+  .position-fixed {
+    overflow: hidden;
+  }
+
+  .mobile-hidden {
+    display: none !important;
+  }
+
+  .responsive-hidden {
+    display: none;
+  }
+
+  header .header-div.header-sticky .header-container {
+    min-height: auto;
+  }
+
+  .modal.modal-custom .modal-dialog {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-height: calc(100% - 40px);
+  }
+
+  .modal-custom .modal-header {
+    padding: 12px 20px 10px;
+    min-height: 54px;
+  }
+
+  .modal-custom .modal-header .modal-title {
+    font-size: 18px;
+  }
+
+  .modal-custom .modal-header .btn-close {
+    height: 32px;
+    width: 32px;
+    top: -12px;
+    right: -12px;
+  }
+
+  .modal-custom .modal-dialog {
+    transform: none;
+    padding: 0 6px;
+  }
+
+  .search-header-top .offcanvas-body {
+    padding: 50px 0;
+  }
+
+  .search-header-top .offcanvas-header {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    height: auto;
+    padding: 5px;
+  }
+
+  .search-header-top {
+    min-height: 200px;
+  }
+
+  .search-top-div .form-control {
+    padding: 6px 115px 6px 15px;
+  }
+
+  .search-top-div .btn.btn-search {
+    min-width: 100px;
+    font-size: 16px;
+  }
+
+  .home-banner-div h1 {
+    font-size: 24px;
+  }
+
+  .home-banner-div p {
+    font-size: 14px;
+  }
+
+  .home-banner-div .desc-div {
+    max-width: 320px;
+  }
+
+  .home-banner-div {
+    padding: 110px 0;
+  }
+
+  .eco-category-home-div {
+    padding: 50px 0;
+  }
+
+  .btn.btn-primary {
+    padding: 10px 20px 9px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  body.overflow-fixed {
+    overflow-y: hidden;
+  }
+
+  .position-fixed {
+    overflow: hidden;
+  }
+
+  .responsive-hidden {
+    display: none;
+  }
+
+  .tablet-hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape),
+  (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+}
+
+@media (min-width: 800px) and (max-width: 900px) and (max-height: 600px) and (orientation: landscape) {
+}
