@@ -59,8 +59,13 @@
     display: none;
   }
 
-  .search-desktop-div, .mobile-none {
+  .search-desktop-div,
+  .mobile-none {
     display: none !important;
+  }
+
+  header .header-div .full-navigation-div {
+    margin: 0;
   }
 }
 
@@ -253,7 +258,7 @@
     overflow-x: auto;
     margin: 0 0 0 -20px;
   }
-  
+
   .vendor-dash-graph-div .gd-4 {
     width: 256px;
   }
