@@ -38,6 +38,14 @@
     overflow-y: auto;
     max-height: calc(100vh - 158px);
   }
+
+  header .header-div .btn.btn-primary-search {
+    display: none;
+  }
+
+  .desktop-none {
+    display: none !important;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1450px) {
@@ -49,6 +57,10 @@
 @media (max-width: 1024px) {
   .todays-deals-div {
     display: none;
+  }
+
+  .search-desktop-div, .mobile-none {
+    display: none !important;
   }
 }
 
@@ -174,76 +186,6 @@
     min-height: 115px;
   }
 
-  .pro-graph-card {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 10px 0 10px;
-    border-bottom: 1px solid #ddd;
-
-    .title-tp-div {
-      margin: 0;
-      flex: 1;
-
-      h2 {
-        font-size: 16px;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-
-        .ic {
-          margin: 0 8px 0 0;
-        }
-      }
-    }
-
-    .percent {
-      width: 120px;
-
-      svg {
-        width: 120px;
-        height: 120px;
-
-        circle {
-          cx: 60;
-          cy: 60;
-          stroke-width: 4px;
-          r: 55;
-        }
-      }
-
-      .number {
-        h3 {
-          font-size: 24px;
-        }
-
-        p {
-          font-size: 12px;
-        }
-
-        h2 {
-          font-size: 46px;
-        }
-      }
-    }
-
-    .link-btn-div {
-      padding: 0;
-      text-align: left;
-      width: 50%;
-      position: absolute;
-      margin-top: 50px;
-
-      .link {
-        font-size: 12px;
-      }
-    }
-  }
-
-  .vendor-dash-graph-div .gd-4 {
-    border-right: none;
-    border-left: none;
-  }
-
   .main-vandor-section {
     padding: 25px 0;
   }
@@ -266,7 +208,7 @@
     }
   }
 
-  .vendor-details-div .list-group .list-group-item {
+  .vendor-details-div .list-details-vendor .list-group-item-action {
     padding: 10px 8px;
     font-size: 13px;
     min-height: 40px;
@@ -281,7 +223,7 @@
     font-size: 18px;
   }
 
-  .vendor-details-div .list-group {
+  .vendor-details-div .list-details-vendor {
     top: 75px;
     overflow-x: auto;
     white-space: nowrap;
@@ -304,6 +246,17 @@
     padding: 10px 0;
   }
 
+  .vendor-dash-graph-div > .row {
+    white-space: nowrap;
+    width: calc(100% + 35px);
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin: 0 0 0 -20px;
+  }
+  
+  .vendor-dash-graph-div .gd-4 {
+    width: 256px;
+  }
   /* End of Vendor CSS */
 
   /* Product */
@@ -410,24 +363,6 @@
   (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
   .todays-deals-div {
     display: block;
-  }
-
-  .pro-graph-card .title-tp-div h2 {
-    font-size: 18px;
-  }
-
-  .pro-graph-card .percent {
-    svg {
-      width: 180px;
-      height: 180px;
-
-      circle {
-        cx: 90;
-        cy: 90;
-        stroke-width: 6px;
-        r: 85;
-      }
-    }
   }
 }
 

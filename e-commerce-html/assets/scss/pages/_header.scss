@@ -44,7 +44,7 @@ header {
     }
 
     .header-container {
-      padding: 10px 0;
+      padding: 5px 0;
       display: flex;
     }
 
@@ -54,6 +54,42 @@ header {
       height: 70px;
       object-fit: contain;
       object-position: left;
+    }
+
+    .search-desktop-div {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      max-width: 470px;
+
+      .form-group {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .form-control {
+          border-radius: 0;
+          padding: 5px 45px 5px 15px;
+          min-height: 40px;
+        }
+
+        .btn.btn-search {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          top: 0;
+          right: 0;
+          color: #dada10;
+          padding: 0;
+          font-size: 21px;
+          height: 100%;
+          width: 44px;
+          border-radius: 0;
+          z-index: 2;
+        }
+      }
     }
 
     .top-nav1 {
@@ -105,7 +141,7 @@ header {
 
       li {
         padding: 0;
-        margin: 0 25px 0 0;
+        margin: 0 10px 0 0;
 
         &:last-child {
           margin: 0;
@@ -114,7 +150,7 @@ header {
 
       li .nav-link {
         color: var(--whiteColor);
-        padding: 8px 15px;
+        padding: 5px 10px;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.7;
@@ -123,7 +159,7 @@ header {
         display: inline-flex;
         align-items: center;
         overflow: hidden;
-        min-height: 50px;
+        min-height: 40px;
         text-align: center;
 
         &:hover {
@@ -167,7 +203,8 @@ header {
 
       li.active .nav-link,
       li.active .dropdown-toggle {
-        color: var(--primaryColor01);
+        color: var(--whiteColor);
+        background-color: var(--primaryColor02);
       }
     }
 
@@ -192,6 +229,7 @@ header {
           display: flex;
           align-items: center;
           flex-wrap: wrap;
+          justify-content: flex-end;
         }
       }
     }
@@ -207,6 +245,52 @@ header {
 
       &:hover {
         color: rgba(255, 255, 255, 0.8);
+      }
+    }
+
+    .full-navigation-div {
+      background: #fafafa;
+      padding: 0;
+      margin: 5px 0 0;
+      position: relative;
+
+      .custom-nav-full-list-div {
+        .nav.ullist-inline {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          color: #222;
+
+          li {
+            margin: 0;
+            flex: 1;
+
+            a {
+              color: #333;
+              width: 100%;
+              text-align: center;
+              justify-content: center;
+              min-height: 50px;
+              transition: all 0.8s;
+
+              &:hover {
+                background-color: var(--primaryColor01);
+                color: #fff;
+              }
+            }
+
+            &.active {
+              a {
+                color: #fff;
+
+                &:hover {
+                  background-color: #166bc1;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
       }
     }
 
@@ -249,29 +333,31 @@ header {
       min-height: 75px;
 
       .nav-center-div {
-        width: 30%;
+        width: auto;
         order: 3;
         min-height: 70px;
         padding: 0;
         justify-content: flex-end;
+
+        .nav-m-bar {
+          position: absolute;
+          left: 15px;
+        }
       }
 
       .logo-div {
-        width: 70%;
-        order: 1;
-        padding: 0 0;
-        min-height: 70px;
-      }
-
-      .header-container {
-        display: flex;
+        width: 100%;
+        order: 2;
         padding: 0;
-        min-height: 75px;
+        min-height: 70px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
       }
 
       .btn.btn-primary-search {
         margin: 0;
-        right: 60px;
+        left: auto;
         top: 0;
         height: 100%;
         position: absolute;
@@ -283,20 +369,7 @@ header {
         }
       }
 
-      .nav-center-div {
-        width: 30%;
-        order: 3;
-        min-height: 70px;
-        padding: 0;
-        justify-content: flex-end;
-      }
-
       .logo-div {
-        width: 70%;
-        order: 1;
-        padding: 0 0;
-        min-height: 70px;
-
         .img-fluid {
           max-width: 200px;
         }
@@ -352,7 +425,7 @@ header {
           display: block;
 
           &:hover {
-            color: #ef641f;
+            color: var(--primaryColor01);
           }
         }
 
@@ -394,6 +467,7 @@ header {
 
       .header-container {
         display: flex;
+        justify-content: center;
         padding: 0;
         min-height: 75px;
       }
@@ -416,7 +490,7 @@ header {
       }
 
       .ullist-inline li.active .nav-link {
-        color: #ef641f;
+        color: #fff;
       }
     }
 

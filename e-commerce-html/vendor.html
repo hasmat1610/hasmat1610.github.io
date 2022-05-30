@@ -19,7 +19,7 @@
   <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#list-details-vendor" data-bs-offset="0" class="scrollspy-vendor-ex" tabindex="0">
+<body>
 
   <div id="wrapper" class="wrapper">
 
@@ -60,11 +60,30 @@
                           <li><a href="#" class="nav-link">About Us</a></li>
                           <li><a href="#" class="nav-link">Advertising Disclouser</a></li>
                         </ul>
+
+                        <!-- For Main Mobile Menu -->
+                        <ul class="nav ullist-inline desktop-none" id="full-navigation-mobile">
+                          <li class="active"><a href="#" class="nav-link">Home</a></li>
+                          <li><a href="#" class="nav-link">Nav 02</a></li>
+                          <li><a href="#" class="nav-link">Nav 03</a></li>
+                          <li><a href="#" class="nav-link">Nav 04</a></li>
+                        </ul>
+                        <!-- En of Main Mobile Menu -->
+
+                        <!-- Only For Desktop -->
+                        <div class="search-desktop-div">
+                          <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search Here">
+                            <button type="button" class="btn btn-search"> <i class="fe fe-search"></i> </button>
+                          </div>
+                        </div>
+                        <!-- End Of Only For Desktop -->
+                        
                       </div>
                     </div>
                   </div>
 
-                  <!-- Search -->
+                  <!-- Mobile Search -->
                   <button class="btn btn-primary-search" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"><i class="fe fe-search"></i></button>
                   <div class="offcanvas offcanvas-top search-header-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
                     <div class="offcanvas-header">
@@ -83,13 +102,26 @@
                       </div>
                     </div>
                   </div>
-                  <!-- End of Search -->
+                  <!-- End of Mobile Search -->
 
                 </div>
               </nav>
-
+              
             </div>
 
+          </div>
+
+          <div class="full-navigation-div">
+            <div class="container">
+              <div class="custom-nav-full-list-div">
+                <ul class="nav ullist-inline mobile-none" id="full-navigation-desktop">
+                  <li class="active"><a href="#" class="nav-link">Home</a></li>
+                  <li><a href="#" class="nav-link">Nav 02</a></li>
+                  <li><a href="#" class="nav-link">Nav 03</a></li>
+                  <li><a href="#" class="nav-link">Nav 04</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -196,11 +228,11 @@
                 </div>
 
                 <div class="vendor-details-div" id="vendor-details-div">
-                  <div id="list-details-vendor" class="list-group">
-                    <a class="list-group-item list-group-item-action active" href="#list-item-vendor1"> About Vendor </a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-vendor2"> User Rating </a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-vendor3"> Rates </a>
-                    <a class="list-group-item list-group-item-action" href="#list-item-vendor4"> Locations </a>
+                  <div id="list-details-vendor" class="list-details-vendor">
+                    <a data-scroll="list-item-vendor1" class="list-group-item-action active" href="#list-item-vendor1"> About Vendor </a>
+                    <a data-scroll="list-item-vendor2" class="list-group-item-action" href="#list-item-vendor2"> User Rating </a>
+                    <a data-scroll="list-item-vendor3" class="list-group-item-action" href="#list-item-vendor3"> Rates </a>
+                    <a data-scroll="list-item-vendor4" class="list-group-item-action" href="#list-item-vendor4"> Locations </a>
 
                     <a href="#vendor-details-div" class="backtotop-vendor"> <i class="fe fe-arrow-up"></i> <span class="txt">Back to top</span> </a>
                   </div>

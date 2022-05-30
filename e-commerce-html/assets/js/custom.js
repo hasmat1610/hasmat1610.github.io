@@ -31,12 +31,56 @@ $(document).ready(function () {
   });
 });
 
-var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-  target: '#list-details-vendor'
+/* Back to top */
+var btn = $(".backtotop-vendor");
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 600) {
+    btn.addClass("show");
+  } else {
+    btn.removeClass("show");
+  }
 });
 
-var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
-dataSpyList.forEach(function (dataSpyEl) {
-  bootstrap.ScrollSpy.getInstance(dataSpyEl)
-    .refresh()
-})
+btn.on("click", function (e) {
+  e.preventDefault();
+  $("html, body").animate({ scrollTop: 0 }, "1300");
+});
+
+/* End of Back to top */
+
+$(function() {
+  
+  var link = $('.list-details-vendor .list-group-item-action');
+  
+  // Move to specific section when click on menu link
+  link.on('click', function(e) {
+    var target = $($(this).attr('href'));
+    $('html, body').animate({
+      scrollTop: target.offset().top-114
+    }, 600);
+    $(this).addClass('active');
+    e.preventDefault();
+  });
+  
+  // Run the scrNav when scroll
+  $(window).on('scroll', function(){
+    scrNav();
+  });
+  
+  // scrNav function 
+  // Change active dot according to the active section in the window
+  function scrNav() {
+    var sTop = $(window).scrollTop();
+    $('.list-item-body').each(function() {
+      var id = $(this).attr('id'),
+          offset = $(this).offset().top-144,
+          height = $(this).height();
+      if(sTop >= offset && sTop < offset + height) {
+        link.removeClass('active');
+        $('.vendor-details-div').find('[data-scroll="' + id + '"]').addClass('active');
+      }
+    });
+  }
+  scrNav();
+});
