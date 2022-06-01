@@ -1992,7 +1992,7 @@ body {
 
 .vendor-details-div .list-details-vendor {
   position: sticky;
-  top: 91px;
+  top: 146px;
   flex-direction: unset;
   border-radius: 0;
   flex-wrap: wrap;
@@ -2909,6 +2909,9 @@ ul
   }
   header .header-div .full-navigation-div {
     margin: 0;
+  }
+  .vendor-details-div .list-details-vendor {
+    top: 91px;
   }
 }
 

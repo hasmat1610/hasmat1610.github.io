@@ -53,28 +53,26 @@ $(function() {
   
   var link = $('.list-details-vendor .list-group-item-action');
   
-  // Move to specific section when click on menu link
-  link.on('click', function(e) {
-    var target = $($(this).attr('href'));
-    $('html, body').animate({
-      scrollTop: target.offset().top-114
-    }, 600);
-    $(this).addClass('active');
-    e.preventDefault();
-  });
+  function scrNavClick() {
+    link.on('click', function(e) {
+      var target = $($(this).attr('href'));
+      $('html, body').animate({
+        scrollTop: target.offset().top-164
+      }, 600);
+      $(this).addClass('active');
+      e.preventDefault();
+    });
+  }
   
-  // Run the scrNav when scroll
   $(window).on('scroll', function(){
     scrNav();
   });
   
-  // scrNav function 
-  // Change active dot according to the active section in the window
   function scrNav() {
     var sTop = $(window).scrollTop();
     $('.list-item-body').each(function() {
       var id = $(this).attr('id'),
-          offset = $(this).offset().top-144,
+          offset = $(this).offset().top-194,
           height = $(this).height();
       if(sTop >= offset && sTop < offset + height) {
         link.removeClass('active');
@@ -82,5 +80,37 @@ $(function() {
       }
     });
   }
-  scrNav();
+
+  if (window.matchMedia("(max-width: 1024px)").matches) {
+    function scrNavClick() {
+      link.on('click', function(e) {
+        var target = $($(this).attr('href'));
+        $('html, body').animate({
+          scrollTop: target.offset().top-114
+        }, 600);
+        $(this).addClass('active');
+        e.preventDefault();
+      });
+    }
+    function scrNav() {
+      var sTop = $(window).scrollTop();
+      $('.list-item-body').each(function() {
+        var id = $(this).attr('id'),
+            offset = $(this).offset().top-144,
+            height = $(this).height();
+        if(sTop >= offset && sTop < offset + height) {
+          link.removeClass('active');
+          $('.vendor-details-div').find('[data-scroll="' + id + '"]').addClass('active');
+        }
+      });
+    }
+
+    scrNavClick();
+    scrNav();
+    
+  } else {
+    scrNavClick();
+    scrNav();
+  }
+  
 });
