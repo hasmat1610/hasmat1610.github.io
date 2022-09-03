@@ -7,7 +7,7 @@
   --primaryColor01: #f3e483;
   --primaryColor02: #ffd700;
   --primaryColor03: #9b1b2f;
-  --primaryColor04: #a61c32;
+  --primaryColor04: #ad192f;
 
   --successColor01: #40ac25;
   --successColor02: #36931f;
@@ -16,6 +16,7 @@
   --dangerColor02: #b70f0f;
 
   --blueColor01: #7c5ada;
+  --blueColor02: #0e1720;
 
   --secondaryColor01: #19a3a9;
   --secondaryColor01Hover: #0e858b;
@@ -38,21 +39,18 @@
 
   --greenColor: #40912d;
 
-  --greyColor01: #efefef;
+  --greyColor01: #ddd;
   --greyColor02: #ebebeb;
   --greyColor03: #c1c1c1;
   --greyColor04: #777777;
   --greyColor05: #eeeeee;
   --greyColor06: #d8d8d8;
-  --greyColor07: #818181;
+  --greyColor07: #ddd;
 
   --lightColor01: #d5e4f2;
-  --lightColor02: #efe9f4;
-  --lightColor03: #d5ccf7;
-  --lightColor04: #f4f0f7;
-  --lightColor05: #e3e3e3;
-  --lightColor06: #f9f5fc;
-
+  --lightColor02: #f8f9fa;
+  --lightColor03: #e3e3e3;
+  
   --bgColor01: #f4f6f6;
 
   --ck-color-base-active: #662d91;
@@ -371,7 +369,7 @@ hr {
     }
 
     .form-control {
-      border: 1px solid var(--greyColor05);
+      border: 1px solid var(--greyColor01);
       border-radius: 4px;
       background-color: var(--whiteColor);
       height: var(--height60);
@@ -1382,26 +1380,9 @@ hr {
 
   &:hover {
     box-shadow: none;
-    background: var(--primaryColor02);
-    border-color: var(--primaryColor02);
-    color: var(--blackColor01);
-  }
-
-  &.btn-ht42 {
-    min-height: 42px;
-    padding: 8px 25px;
-    font-size: 14px;
-  }
-
-  &.btn-h-60 {
-    min-height: 60px;
-    padding: 10px 25px;
-    font-size: 14px;
-  }
-
-  &.btn-sm {
-    font-size: 18px;
-    padding: 10px 30px;
+    background: var(--primaryColor04);
+    border-color: var(--primaryColor04);
+    color: var(--whiteColor);
   }
 }
 
@@ -2314,8 +2295,8 @@ body {
 
       &::after {
         content: "";
-        border-left: 1px solid var(--lightColor05);
-        border-right: 1px solid var(--lightColor05);
+        border-left: 1px solid var(--lightColor03);
+        border-right: 1px solid var(--lightColor03);
         position: absolute;
         bottom: -16px;
         left: -1px;
@@ -2335,7 +2316,7 @@ body {
         padding-bottom: 8px;
         border-bottom: 0;
         border-radius: 10px 10px 0 0;
-        border-color: var(--lightColor05);
+        border-color: var(--lightColor03);
 
         &::before {
           opacity: 1;
@@ -2371,7 +2352,7 @@ body {
 }
 
 .tab-content-custom {
-  border: 1px solid var(--lightColor05);
+  border: 1px solid var(--lightColor03);
   border-radius: 0 10px 10px 10px;
 }
 
@@ -2385,7 +2366,7 @@ body {
   margin: 0 0 15px;
   position: relative;
   font-family: var(--playfair_display);
-  border-bottom: 1px solid var(--lightColor05);
+  border-bottom: 1px solid var(--lightColor03);
 
   &::after {
     content: "";
