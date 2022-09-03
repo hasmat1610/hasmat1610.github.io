@@ -6,7 +6,7 @@
   --primaryColor01: #f3e483;
   --primaryColor02: #ffd700;
   --primaryColor03: #9b1b2f;
-  --primaryColor04: #a61c32;
+  --primaryColor04: #ad192f;
   --successColor01: #40ac25;
   --successColor02: #36931f;
   --dangerColor01: #fc3635;
@@ -1198,23 +1198,9 @@ hr {
 }
 .btn.btn-secondary-common:hover {
   box-shadow: none;
-  background: var(--primaryColor02);
-  border-color: var(--primaryColor02);
-  color: var(--blackColor01);
-}
-.btn.btn-secondary-common.btn-ht42 {
-  min-height: 42px;
-  padding: 8px 25px;
-  font-size: 14px;
-}
-.btn.btn-secondary-common.btn-h-60 {
-  min-height: 60px;
-  padding: 10px 25px;
-  font-size: 14px;
-}
-.btn.btn-secondary-common.btn-sm {
-  font-size: 18px;
-  padding: 10px 30px;
+  background: var(--primaryColor04);
+  border-color: var(--primaryColor04);
+  color: var(--whiteColor);
 }
 
 .btn.btn-success-common {
