@@ -371,7 +371,7 @@ hr {
     }
 
     .form-control {
-      border: 1px solid var(--greyColor03);
+      border: 1px solid var(--greyColor05);
       border-radius: 4px;
       background-color: var(--whiteColor);
       height: var(--height60);
@@ -385,7 +385,7 @@ hr {
 
       &:focus {
         border-color: var(--primaryColor03);
-        box-shadow: 0 1px 6px 0 #84429980;
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.05);
       }
 
       &:disabled {
@@ -1045,17 +1045,6 @@ hr {
     }
   }
 
-  .btn-dv {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 5px 0 5px;
-
-    .btn.btn-primary {
-      min-width: 148px;
-    }
-  }
-
   .select2.select2-container {
     width: 100% !important;
   }
@@ -1343,6 +1332,36 @@ hr {
   background: var(--primaryColor01);
   color: var(--blackColor01);
   border: 1px solid var(--primaryColor01);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 14px 40px 12px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 56px;
+  letter-spacing: 0.5px;
+
+  &.mr-20 {
+    margin-right: 20px;
+  }
+
+  &:hover {
+    box-shadow: none;
+    background: var(--primaryColor02);
+    border-color: var(--primaryColor02);
+    color: var(--blackColor01);
+  }
+}
+
+.btn.btn-secondary-common {
+  background: var(--primaryColor03);
+  color: var(--whiteColor);
+  border: 1px solid var(--primaryColor03);
   border-radius: 4px;
   font-weight: 500;
   font-size: 18px;
@@ -1891,28 +1910,6 @@ hr {
 
   &:hover {
     color: var(--primaryColor01);
-  }
-}
-
-.btn.btn-secondary-common {
-  background: var(--secondaryColor01);
-  color: var(--whiteColor);
-  border: 1px solid var(--secondaryColor01);
-  border-radius: 30px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.5;
-  padding: 9px 25px 8px;
-  font-family: var(--playfair_display);
-  transition: all 0.3s ease-in-out;
-  display: inline-block;
-  text-align: center;
-
-  &:hover {
-    box-shadow: none;
-    background: var(--secondaryColor01Hover);
-    border-color: var(--secondaryColor01Hover);
-    color: var(--whiteColor);
   }
 }
 
