@@ -4708,6 +4708,54 @@ header .header-div .nav-center-div {
   position: relative;
 }
 
+.explore-more-section {
+  padding: 60px 0;
+  margin: 0;
+  position: relative;
+  background-color: var(--blueColor02);
+  background-image: url(../images/shape.png);
+  background-size: cover;
+  background-position: center;
+}
+.explore-more-section .image-grid-card h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.contact-us-section {
+  padding: 60px 0;
+  margin: 0;
+  position: relative;
+  background-color: var(--blueColor02);
+  background-image: url(../images/shape.png);
+  background-size: cover;
+  background-position: center;
+  color: var(--whiteColor);
+}
+.contact-us-section h2 {
+  color: var(--whiteColor);
+  margin: 0 0 10px;
+}
+.contact-us-section p {
+  color: var(--whiteColor);
+  font-size: 18px;
+  line-height: 1.7;
+  display: block;
+  margin: 0 0 10px;
+}
+.contact-us-section .desc-dv {
+  margin: 0 0 20px;
+}
+
+.contact-svg {
+  fill: var(--blueColor02);
+  width: 60px;
+  margin: 0 0 15px;
+}
+.contact-svg path.lineal-stroke {
+  fill: var(--whiteColor);
+}
+
 .select-box {
   position: relative;
   display: flex;
